@@ -12,13 +12,13 @@ try{var _t=localStorage.getItem("cardiogen-theme");if(_t==="light"||_t==="dark")
 :root{
   --bg0:#06070d; --bg1:#0a0c17;
   --ink:#edf0f9; --muted:#a9b1c9; --faint:#7f88a5;
-  --sky:#fda4af; --sky-deep:#be123c;
-  --teal:#be123c; --teal-deep:#4c0519;
-  --org:#ad3a5a; --org-deep:#4c0519;
-  --amber:#fbbf24; --rose:#fb7185; --cyan:#fda4af;
+  --sky:#22d3ee; --sky-deep:#0b8294;
+  --teal:#e879f9; --teal-deep:#d60ef4;
+  --org:#4ade80; --org-deep:#1c9b4b;
+  --amber:#22d3ee; --rose:#e879f9; --cyan:#22d3ee;
   --card:#0d1020; --card2:#12162b;
   --line:rgba(255,255,255,.09);
-  --grad:linear-gradient(100deg,#fda4af 5%,#be123c 50%,#ad3a5a 95%);
+  --grad:linear-gradient(100deg,#a4f1fd 5%,#a712be 50%,#3aad64 95%);
   --ongrad:#0a0c14;
   --radius:18px;
   --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,"Helvetica Neue",Arial,sans-serif;
@@ -30,15 +30,15 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
   font-size:1.06rem;line-height:1.75;overflow-x:clip;-webkit-font-smoothing:antialiased}
 .bg-grad{position:fixed;inset:0;z-index:0;pointer-events:none;
   background:
-    radial-gradient(900px 620px at 12% -6%, rgba(76, 5, 25,0.288), transparent 60%),
-    radial-gradient(820px 600px at 88% 22%, rgba(76, 5, 25,0.192), transparent 60%),
-    radial-gradient(1000px 800px at 50% 110%, rgba(190, 18, 60,0.192), transparent 62%),
-    radial-gradient(700px 500px at 78% 78%, rgba(253, 164, 175,0.096), transparent 60%)}
+    radial-gradient(900px 620px at 12% -6%, rgba(67,5,76,0.288), transparent 60%),
+    radial-gradient(820px 600px at 88% 22%, rgba(67,5,76,0.192), transparent 60%),
+    radial-gradient(1000px 800px at 50% 110%, rgba(167,18,190,0.192), transparent 62%),
+    radial-gradient(700px 500px at 78% 78%, rgba(164,241,253,0.096), transparent 60%)}
 #dots{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.85}
 .orb{position:fixed;z-index:0;pointer-events:none;border-radius:50%;filter:blur(90px)}
-.o1{width:520px;height:520px;left:-140px;top:6%;background:radial-gradient(circle,rgba(76, 5, 25,0.24),transparent 70%);animation:drift1 38s ease-in-out infinite alternate}
-.o2{width:460px;height:460px;right:-120px;top:38%;background:radial-gradient(circle,rgba(76, 5, 25,0.192),transparent 70%);animation:drift2 46s ease-in-out infinite alternate}
-.o3{width:430px;height:430px;left:24%;bottom:-160px;background:radial-gradient(circle,rgba(190, 18, 60,0.192),transparent 70%);animation:drift3 54s ease-in-out infinite alternate}
+.o1{width:520px;height:520px;left:-140px;top:6%;background:radial-gradient(circle,rgba(67,5,76,0.24),transparent 70%);animation:drift1 38s ease-in-out infinite alternate}
+.o2{width:460px;height:460px;right:-120px;top:38%;background:radial-gradient(circle,rgba(67,5,76,0.192),transparent 70%);animation:drift2 46s ease-in-out infinite alternate}
+.o3{width:430px;height:430px;left:24%;bottom:-160px;background:radial-gradient(circle,rgba(167,18,190,0.192),transparent 70%);animation:drift3 54s ease-in-out infinite alternate}
 @keyframes drift1{from{transform:translate(0,0)}to{transform:translate(120px,80px)}}
 @keyframes drift2{from{transform:translate(0,0)}to{transform:translate(-100px,-70px)}}
 @keyframes drift3{from{transform:translate(0,0)}to{transform:translate(90px,-80px)}}
@@ -67,13 +67,13 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
 [data-theme="light"]{
   --bg0:#e8ebf0; --bg1:#eef1f6;
   --ink:#1b2436; --muted:#4d5871; --faint:#707a93;
-  --sky:#be123c; --sky-deep:#4c0519;
-  --teal:#4c0519; --teal-deep:#4c0519;
-  --org:#be123c; --org-deep:#4c0519;
-  --amber:#b45309; --rose:#be123c; --cyan:#4c0519;
+  --sky:#078ea3; --sky-deep:#023037;
+  --teal:#da13f9; --teal-deep:#840498;
+  --org:#078ea3; --org-deep:#023037;
+  --amber:#18aa4d; --rose:#078ea3; --cyan:#da13f9;
   --card:#f8fafc; --card2:#e9edf3;
   --line:rgba(15,23,42,.14);
-  --grad:linear-gradient(100deg,#be123c,#4c0519,#be123c);
+  --grad:linear-gradient(100deg,#12a7be,#42054c,#12a7be);
   --ongrad:#ffffff;
   color-scheme:light;
 }
@@ -84,7 +84,7 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
 [data-theme="light"] #dots{opacity:.55}
 [data-theme="light"] .bg-grad{opacity:.55}
 nav.chapters{position:sticky;top:0;z-index:50;background:rgba(6,7,13,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-nav.chapters .rail{max-width:1080px;margin:0 auto;padding:.65rem 1rem;display:flex;gap:.5rem;overflow-x:auto;scrollbar-width:none;padding-right:3.8rem}
+nav.chapters .rail{max-width:1280px;margin:0 auto;padding:.65rem 1rem;display:flex;gap:.5rem;overflow-x:auto;scrollbar-width:none;padding-right:3.8rem}
 nav.chapters .rail::-webkit-scrollbar{display:none}
 nav.chapters a{flex:0 0 auto;text-decoration:none;color:var(--muted);font-size:.82rem;font-weight:600;
   letter-spacing:.04em;padding:.42rem .8rem;border:1px solid var(--line);border-radius:999px;white-space:nowrap;transition:all .25s ease}
@@ -119,7 +119,7 @@ nav.chapters a.active{color:#0a0c14;background:var(--grad);border-color:transpar
   .toc .mini-bar{height:3px;background:rgba(255,255,255,.08);border-radius:99px;margin-top:.55rem;overflow:hidden}
   .toc .mini-bar i{display:block;height:100%;width:0;background:var(--grad);border-radius:99px}
 }
-.wrap{position:relative;z-index:1;max-width:960px;margin:0 auto;padding:0 1.25rem}
+.wrap{position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:0 1.25rem}
 section.chapter{padding:4.2rem 0 1rem;scroll-margin-top:84px}
 .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.78rem;font-weight:700;letter-spacing:.22em;
   text-transform:uppercase;color:var(--faint);margin-bottom:1rem}
@@ -129,13 +129,13 @@ h2{font-family:var(--disp);font-size:clamp(1.7rem,4vw,2.5rem);font-weight:800;le
 h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .lede{color:var(--muted);font-size:1.12rem;max-width:44rem;margin-bottom:2rem}
 .lede strong{color:var(--ink)}
-.hero{position:relative;z-index:1;text-align:center;padding:5.5rem 1.25rem 3.5rem;max-width:960px;margin:0 auto}
+.hero{position:relative;z-index:1;text-align:center;padding:5.5rem 1.25rem 3.5rem;max-width:1280px;margin:0 auto}
 .hero-disc{display:inline-block;margin:0 auto 1.1rem;padding:.5rem 1.05rem;border:1px solid var(--line);border-radius:999px;font-size:.8rem;color:var(--muted);background:rgba(255,255,255,.03)}
 .badge{display:inline-flex;align-items:center;gap:.55rem;font-size:.78rem;font-weight:700;letter-spacing:.18em;
   text-transform:uppercase;color:var(--ink);border:1px solid var(--line);background:rgba(255,255,255,.04);
   padding:.55rem 1.1rem;border-radius:999px;margin-bottom:1.6rem}
-.badge .dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--amber);box-shadow:0 0 0 0 rgba(251,191,36,.6);animation:pulse 2.2s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(251,191,36,.55)}70%{box-shadow:0 0 0 12px rgba(251,191,36,0)}100%{box-shadow:0 0 0 0 rgba(251,191,36,0)}}
+.badge .dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--amber);box-shadow:0 0 0 0 rgba(38,221,249,.6);animation:pulse 2.2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(38,221,249,.55)}70%{box-shadow:0 0 0 12px rgba(38,221,249,0)}100%{box-shadow:0 0 0 0 rgba(38,221,249,0)}}
 .hero h1{font-family:var(--disp);font-weight:900;letter-spacing:-.03em;line-height:1.02;font-size:clamp(2.4rem,7.5vw,4.8rem);margin-bottom:1.1rem}
 .hero h1 .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;
   background-size:200% auto;animation:sheen 9s ease-in-out infinite}
@@ -188,11 +188,11 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
   padding:.3rem .7rem;border-radius:8px;margin-top:.25rem}
 .kv .k.s{background:rgba(124,199,255,.12);color:var(--sky);border:1px solid rgba(124,199,255,.35)}
 .kv .k.t{background:rgba(94,234,212,.10);color:var(--teal);border:1px solid rgba(94,234,212,.35)}
-.kv .k.o{background:rgba(251, 146, 60,.12);color:var(--org);border:1px solid rgba(251, 146, 60,.35)}
-.kv .k.a{background:rgba(251,191,36,.12);color:var(--amber);border:1px solid rgba(251,191,36,.35)}
-.kv .k.g{background:rgba(253, 164, 175,.12);color:var(--rose);border:1px solid rgba(253, 164, 175,.35)}
+.kv .k.o{background:rgba(61,225,250,.12);color:var(--org);border:1px solid rgba(61,225,250,.35)}
+.kv .k.a{background:rgba(38,221,249,.12);color:var(--amber);border:1px solid rgba(38,221,249,.35)}
+.kv .k.g{background:rgba(164,241,253,.12);color:var(--rose);border:1px solid rgba(164,241,253,.35)}
 .kv p{font-size:.99rem}
-.diagram{background:radial-gradient(600px 300px at 50% 0%,rgba(76, 5, 25,.10),transparent 70%),#090b15;
+.diagram{background:radial-gradient(600px 300px at 50% 0%,rgba(67,5,76,.10),transparent 70%),#090b15;
   border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem;margin:0 0 1.4rem;overflow:hidden}
 .diagram svg{display:block;width:100%;height:auto}
 .diagram .cap{text-align:center;color:var(--faint);font-size:.85rem;margin-top:.9rem;letter-spacing:.03em}
@@ -209,14 +209,14 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .ebar .row .v{font-size:.88rem;color:var(--faint);font-variant-numeric:tabular-nums}
 .ebar .track{height:14px;background:rgba(255,255,255,.06);border-radius:999px;overflow:hidden;border:1px solid var(--line)}
 .ebar .fill{height:100%;width:0;border-radius:999px;transition:width 1.6s cubic-bezier(.2,.7,.2,1)}
-.in .ebar .fill{width:var(--w)}
+.ebar.in .fill{width:var(--w)}
 .ebar .note{font-size:.85rem;color:var(--faint);margin-top:.45rem}
 .anec-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
 @media(max-width:720px){.anec-grid{grid-template-columns:1fr}}
 .anec{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem;position:relative;overflow:hidden}
 .anec::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad)}
 .anec .stamp{display:inline-block;font-size:.66rem;font-weight:800;letter-spacing:.12em;
-  color:var(--amber);border:1px solid rgba(251,191,36,.4);background:rgba(251,191,36,.08);
+  color:var(--amber);border:1px solid rgba(38,221,249,.4);background:rgba(38,221,249,.08);
   padding:.28rem .6rem;border-radius:7px;text-transform:uppercase;margin-bottom:.65rem}
 .anec h4{font-size:1.05rem;font-weight:800;margin-bottom:.5rem}
 .anec-head{display:flex;align-items:center;gap:.85rem;margin-bottom:.55rem}
@@ -226,13 +226,22 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .anec-head .udot{margin-left:.15rem}
 .ulegend{display:flex;align-items:center;gap:.75rem;margin:0 0 1.5rem;padding:.85rem 1.15rem;border:1px dashed var(--line);border-radius:14px;background:rgba(255,255,255,.03);color:var(--muted);font-size:.93rem}
 .ulegend strong{color:var(--ink)}
+/* --- layman example tiles: theme-accent pulse dot (distinct from amber anecdote dots) --- */
+.xtile{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:1rem 1.25rem;margin:1.2rem 0;font-size:.94rem;line-height:1.65;color:var(--muted)}
+.xtile strong{color:var(--ink)}
+.xtile .xlead{font-weight:800;color:var(--sky)}
+.xdot{position:absolute;top:-7px;left:24px;width:13px;height:13px;border-radius:50%;background:var(--sky)}
+.xdot::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:2px solid var(--sky);animation:xdotPulse 2.2s ease-out infinite}
+@keyframes xdotPulse{0%{transform:scale(.55);opacity:.9}70%{opacity:.25}100%{transform:scale(1.25);opacity:0}}
+@media (prefers-reduced-motion:reduce){.xdot::after{animation:none;opacity:.35;transform:scale(.8)}}
 @media (prefers-reduced-motion:reduce){.udot::after{animation:none;opacity:.35;transform:scale(.8)}}
 .anec-head .thumb{flex:0 0 auto;width:54px;height:54px;border-radius:14px;border:1px solid var(--line)}
 .anec-head h4{margin-bottom:0}
 .anec p{color:var(--muted);font-size:.95rem}
 .anec p strong{color:var(--ink)}
 .anec .caveat{margin-top:.8rem;font-size:.82rem;color:var(--faint);border-top:1px dashed var(--line);padding-top:.7rem}
-.folk-note{background:rgba(251,191,36,.06);border:1px solid rgba(251,191,36,.3);border-radius:var(--radius);
+.folk-note{background:rgba(38,221,249,.06);border:1px solid rgba(38,221,249,.3);border-radius:var(--radius);
   padding:1.2rem 1.4rem;margin-bottom:1.6rem;color:var(--muted);font-size:.98rem}
 .folk-note strong{color:var(--amber)}
 .safety-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
@@ -243,9 +252,9 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .scard h4{font-size:1.05rem;font-weight:800;margin-bottom:.5rem}
 .scard p{color:var(--muted);font-size:.95rem}
 .scard p strong{color:var(--ink)}
-.lvl-known .level{background:rgba(251,191,36,.1);color:var(--amber);border:1px solid rgba(251,191,36,.4)}
-.lvl-theory .level{background:rgba(251, 146, 60,.1);color:var(--org);border:1px solid rgba(251, 146, 60,.4)}
-.lvl-unknown .level{background:rgba(253, 164, 175,.1);color:var(--rose);border:1px solid rgba(253, 164, 175,.4)}
+.lvl-known .level{background:rgba(38,221,249,.1);color:var(--amber);border:1px solid rgba(38,221,249,.4)}
+.lvl-theory .level{background:rgba(61,225,250,.1);color:var(--org);border:1px solid rgba(61,225,250,.4)}
+.lvl-unknown .level{background:rgba(164,241,253,.1);color:var(--rose);border:1px solid rgba(164,241,253,.4)}
 .gloss{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
 .g-item{border-bottom:1px solid var(--line)}
 .g-item:last-child{border-bottom:none}
@@ -266,10 +275,9 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 @keyframes gaBreathe{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
 @keyframes gaTilt{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
 .g-a{max-height:0;overflow:hidden;transition:max-height .45s ease}
-.g-a .gsci,.g-a .gex{padding:0 1.4rem 1rem;color:var(--muted);font-size:.95rem}
-.g-a .gsci strong,.g-a .gex strong{color:var(--ink)}
+.g-a .gsci{padding:0 1.4rem 1rem;color:var(--muted);font-size:.95rem}
+.g-a .gsci strong{color:var(--ink)}
 .gslabel{display:block;font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin-bottom:.35rem}
-.g-a .gex{margin:0 1.4rem 1rem;padding:0 0 0 1rem;border-left:2px solid var(--line)}
 .g-a .plain{margin:0 1.4rem 1.3rem;background:rgba(255,255,255,.035);border:1px dashed rgba(255,255,255,.22);
   border-radius:12px;padding:1rem 1.2rem;font-size:.96rem;color:var(--muted)}
 .g-a .plain b{color:var(--ink)}
@@ -282,7 +290,7 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .take h4{font-size:1.05rem;font-weight:800;margin-bottom:.4rem}
 .take p{color:var(--muted);font-size:.95rem}
 .take p strong{color:var(--ink)}
-.limits{background:rgba(253, 164, 175,.05);border:1px solid rgba(253, 164, 175,.3);border-radius:var(--radius);
+.limits{background:rgba(164,241,253,.05);border:1px solid rgba(164,241,253,.3);border-radius:var(--radius);
   padding:1.4rem 1.6rem;margin-bottom:1.6rem}
 .limits h3{font-family:var(--disp);font-size:1.2rem;font-weight:800;margin-bottom:.7rem;color:var(--rose)}
 .limits ul{list-style:none;display:grid;gap:.6rem}
@@ -323,7 +331,7 @@ table.trial tr td:first-child{color:var(--ink);font-weight:600}
   html{scroll-behavior:auto}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
   .reveal{opacity:1;transform:none}
-  .in .ebar .fill{transition:none}
+  .ebar.in .fill{transition:none}
 }
 
 /* --- ambient motion additions: subtle, additive, non-intrusive --- */
@@ -337,6 +345,31 @@ table.trial tr td:first-child{color:var(--ink);font-weight:600}
 .flowseq2{stroke-dasharray:6 7;animation:dashmove 1.6s linear infinite,seqGlow 4.5s ease-in-out .9s infinite}
 .flowseq3{stroke-dasharray:6 7;animation:dashmove 1.6s linear infinite,seqGlow 4.5s ease-in-out 1.8s infinite}
 
+
+/* --- cardiogen enhancement additions --- */
+.seqr4{animation:seqGlow 4.5s ease-in-out 2.7s infinite}
+.seqr5{animation:seqGlow 4.5s ease-in-out 3.6s infinite}
+@keyframes travx{0%{transform:translateX(0);opacity:0}12%{opacity:1}82%{opacity:1}100%{transform:translateX(120px);opacity:0}}
+.travx{animation:travx 3.4s ease-in-out infinite}
+.sech{font-family:var(--disp);font-size:1.35rem;font-weight:800;margin:2rem 0 1.1rem;letter-spacing:-.01em}
+.alegend{display:flex;align-items:center;gap:.7rem;flex-wrap:wrap;margin:0 0 1.4rem;padding:.8rem 1.1rem;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.02);font-size:.88rem;color:var(--muted)}
+.asolid{width:34px;height:0;border-top:3px solid #a9b1c9;flex:0 0 auto}
+.adashed{width:34px;height:0;border-top:3px dashed #7f88a5;flex:0 0 auto}
+.idcheck{border:2px dashed rgba(38,221,249,.5);background:rgba(38,221,249,.06);border-radius:var(--radius);padding:1.3rem 1.5rem;margin:0 0 1.5rem}
+.idcheck h3{font-size:1.05rem;font-weight:800;margin-bottom:.5rem;color:var(--amber)}
+.idcheck p{color:var(--muted);font-size:.95rem}
+.idcheck p strong{color:var(--ink)}
+.isobanner{border:2px dashed rgba(38,221,249,.55);background:rgba(38,221,249,.07);border-radius:var(--radius);padding:1.2rem 1.4rem;margin:0 0 1.4rem;color:var(--muted);font-size:.98rem}
+.isobanner strong{color:var(--amber);letter-spacing:.06em}
+.rate-h{text-align:center;font-family:var(--disp);font-size:1.5rem;font-weight:800;margin:2.5rem 0 1.2rem;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;margin:0 0 1.4rem}
+@media(max-width:720px){.duo{grid-template-columns:1fr}}
+.duo ul{list-style:none;display:grid;gap:.55rem;margin-top:.7rem}
+.duo li{color:var(--muted);font-size:.95rem;padding-left:1.6rem;position:relative}
+.duo li strong{color:var(--ink)}
+.do li::before{content:"\2713";position:absolute;left:0;color:var(--amber);font-weight:800}
+.dont li::before{content:"\2715";position:absolute;left:0;color:var(--rose);font-weight:800}
+
 /* ===== mini-poll component ===== */
 /* Mini-poll component styles — compact, theme-aware via CSS vars with fallbacks.
    Works inside this infographic (which defines --card, --ink, etc.)
@@ -349,7 +382,7 @@ mini-poll { display: block; }
   border-radius: 18px;
   background:
     linear-gradient(var(--card, #0d1020), var(--card, #0d1020)) padding-box,
-    linear-gradient(135deg, var(--mpc1, #fda4af), var(--mpc2, #be123c)) border-box;
+    linear-gradient(135deg, var(--mpc1, #a4f1fd), var(--mpc2, #a712be)) border-box;
   font-family: inherit;
   overflow: hidden;
 }
@@ -361,11 +394,11 @@ mini-poll { display: block; }
   color: var(--muted, #a9b1c9); font-size: .88rem;
 }
 .mpoll-teaser:hover { background: rgba(255,255,255,.03); }
-.mpoll-teaser:focus-visible { outline: 2px solid var(--amber, #fbbf24); outline-offset: -2px; }
+.mpoll-teaser:focus-visible { outline: 2px solid var(--amber, #26ddf9); outline-offset: -2px; }
 .mpoll-teaser-dot {
   flex: 0 0 auto; width: 8px; height: 8px; border-radius: 50%;
-  background: var(--mpc1, #fda4af);
-  box-shadow: 0 0 10px var(--mpc1, #fda4af);
+  background: var(--mpc1, #a4f1fd);
+  box-shadow: 0 0 10px var(--mpc1, #a4f1fd);
   animation: mpulse 2.4s ease-in-out infinite;
 }
 @keyframes mpulse { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
@@ -399,7 +432,7 @@ mini-poll { display: block; }
   display: flex; align-items: center; justify-content: center; gap: .6rem;
   max-width: 620px; margin: 0 auto 1.4rem; padding: .6rem 1.2rem;
   border-radius: 999px; font-size: .82rem; font-weight: 700; color: #0a0c14;
-  background: linear-gradient(100deg, var(--acc1, #fda4af), var(--acc2, #be123c), var(--acc3, #ad3a5a));
+  background: linear-gradient(100deg, var(--acc1, #a4f1fd), var(--acc2, #a712be), var(--acc3, #3aad64));
 }
 .mpoll-topbanner-dot {
   flex: 0 0 auto; width: 8px; height: 8px; border-radius: 50%;
@@ -420,23 +453,23 @@ mini-poll { display: block; }
   background: rgba(255,255,255,.03); color: var(--ink, #edf0f9);
   font-size: .95rem; transition: border-color .15s, background .15s, transform .15s;
 }
-.mpoll-opt:hover { border-color: var(--amber, #fbbf24); background: rgba(255,255,255,.05); }
-.mpoll-opt:focus-visible { outline: 2px solid var(--amber, #fbbf24); outline-offset: 2px; }
-.mpoll-opt.sel { border-color: var(--amber, #fbbf24); background: rgba(251,191,36,.10); }
+.mpoll-opt:hover { border-color: var(--amber, #26ddf9); background: rgba(255,255,255,.05); }
+.mpoll-opt:focus-visible { outline: 2px solid var(--amber, #26ddf9); outline-offset: 2px; }
+.mpoll-opt.sel { border-color: var(--amber, #26ddf9); background: rgba(38,221,249,.10); }
 .mpoll-emoji { font-size: 1.25rem; flex: 0 0 auto; }
 .mpoll-label { flex: 1; }
 .mpoll-vote, .mpoll-again {
   display: block; width: 100%; margin-top: .9rem; padding: .8rem;
   border: 0; border-radius: 12px; cursor: pointer;
   font-size: 1rem; font-weight: 800; color: #0a0c14;
-  background: linear-gradient(100deg, var(--acc1, #fda4af), var(--acc2, #be123c));
+  background: linear-gradient(100deg, var(--acc1, #a4f1fd), var(--acc2, #a712be));
   transition: transform .15s, opacity .15s;
 }
 .mpoll-vote:hover:not(:disabled), .mpoll-again:hover { transform: translateY(-1px); }
 .mpoll-vote:disabled { opacity: .45; cursor: not-allowed; transform: none; }
 .mpoll-note {
-  margin-top: .7rem; font-size: .88rem; color: #fbbf24;
-  border: 1px dashed rgba(251,191,36,.4); border-radius: 10px; padding: .6rem .8rem;
+  margin-top: .7rem; font-size: .88rem; color: #26ddf9;
+  border: 1px dashed rgba(38,221,249,.4); border-radius: 10px; padding: .6rem .8rem;
 }
 .mpoll-bars { display: grid; gap: .6rem; margin-top: .4rem; }
 .mpoll-rowtop {
@@ -444,17 +477,17 @@ mini-poll { display: block; }
   font-size: .9rem; color: var(--ink, #edf0f9); margin-bottom: .28rem;
 }
 .mpoll-pct { font-weight: 800; color: var(--muted, #a9b1c9); flex: 0 0 auto; }
-.mpoll-mine { color: var(--amber, #fbbf24); font-weight: 700; font-size: .8rem; }
+.mpoll-mine { color: var(--amber, #26ddf9); font-weight: 700; font-size: .8rem; }
 .mpoll-track {
   height: 10px; border-radius: 999px; overflow: hidden;
   background: rgba(255,255,255,.07);
 }
 .mpoll-fill {
   height: 100%; width: 0; border-radius: 999px;
-  background: linear-gradient(90deg, var(--acc1, #fda4af), var(--acc2, #be123c), var(--acc3, #ad3a5a));
+  background: linear-gradient(90deg, var(--acc1, #a4f1fd), var(--acc2, #a712be), var(--acc3, #3aad64));
   transition: width .9s cubic-bezier(.22,.8,.3,1);
 }
-.mpoll-row.mine .mpoll-fill { box-shadow: 0 0 10px rgba(251,191,36,.45); }
+.mpoll-row.mine .mpoll-fill { box-shadow: 0 0 10px rgba(38,221,249,.45); }
 .mpoll-total {
   margin-top: .8rem; font-size: .85rem; color: var(--faint, #7f88a5);
 }
@@ -484,7 +517,7 @@ mini-poll { display: block; }
 <svg class="sr-only" aria-hidden="true" focusable="false">
   <defs>
     <linearGradient id="triGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#fda4af"/><stop offset="50%" stop-color="#be123c"/><stop offset="100%" stop-color="#ad3a5a"/>
+      <stop offset="0%" stop-color="#a4f1fd"/><stop offset="50%" stop-color="#a712be"/><stop offset="100%" stop-color="#3aad64"/>
     </linearGradient>
   </defs>
 </svg>
@@ -510,17 +543,20 @@ mini-poll { display: block; }
   <a href="#ch3"><span class="n">03</span>What It Claims</a>
   <a href="#ch4"><span class="n">04</span>Evidence Check</a>
   <a href="#ch5"><span class="n">05</span>Claims vs Cardiology</a>
-  <a href="#ch6"><span class="n">06</span>What People Say</a>
-  <a href="#ch7"><span class="n">07</span>Risks &amp; Unknowns</a>
-  <a href="#ch8"><span class="n">08</span>Glossary</a>
-  <a href="#ch9"><span class="n">09</span>Takeaways</a>
+  <a href="#ch6"><span class="n">06</span>Potential Benefits</a>
+  <a href="#ch7"><span class="n">07</span>Who It Suits</a>
+  <a href="#ch8"><span class="n">08</span>Anecdotal Reports</a>
+  <a href="#ch9"><span class="n">09</span>Risks &amp; Unknowns</a>
+  <a href="#ch10"><span class="n">10</span>Understanding Cardiogen Terminology</a>
+  <a href="#ch11"><span class="n">11</span>Takeaways</a>
   <div class="mini"><span>Read</span><span id="tocPct">0%</span></div>
   <div class="mini-bar"><i id="tocBar"></i></div>
 </aside>
 <nav class="chapters" aria-label="Chapters"><div class="rail" id="rail">
   <a href="#ch1">01 · Peptide</a><a href="#ch2">02 · Story</a><a href="#ch3">03 · Claims</a>
-  <a href="#ch4">04 · Evidence</a><a href="#ch5">05 · Vs Cardiology</a><a href="#ch6">06 · Reports</a><a href="#ch7">07 · Risks</a>
-  <a href="#ch8">08 · Glossary</a><a href="#ch9">09 · Takeaways</a>
+  <a href="#ch4">04 · Evidence</a><a href="#ch5">05 · Vs Cardiology</a><a href="#ch6">06 · Benefits</a>
+  <a href="#ch7">07 · Who It Suits</a><a href="#ch8">08 · Anecdotal</a><a href="#ch9">09 · Risks</a>
+  <a href="#ch10">10 · Cardiogen Terminology</a><a href="#ch11">11 · Takeaways</a>
 </div></nav>
 
 <header class="hero">
@@ -552,33 +588,34 @@ mini-poll { display: block; }
     <svg viewBox="0 0 640 240" role="img" aria-label="Four amino acid beads A E D P forming Cardiogen with a heart target">
       <text x="20" y="24" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2">CARDIOGEN · ALA–GLU–ASP–PRO</text>
       <g font-size="15" font-weight="800" text-anchor="middle">
-        <circle cx="140" cy="120" r="34" fill="#151b36" stroke="#fda4af" stroke-width="2.5"/>
-        <text x="140" y="116" fill="#fda4af">A</text><text x="140" y="136" fill="#7f88a5" font-size="10" font-weight="600">ALA</text>
-        <circle cx="250" cy="120" r="34" fill="#151b36" stroke="#fda4af" stroke-width="2.5"/>
-        <text x="250" y="116" fill="#fda4af">E</text><text x="250" y="136" fill="#7f88a5" font-size="10" font-weight="600">GLU</text>
-        <circle cx="360" cy="120" r="34" fill="#151b36" stroke="#fda4af" stroke-width="2.5"/>
-        <text x="360" y="116" fill="#fda4af">D</text><text x="360" y="136" fill="#7f88a5" font-size="10" font-weight="600">ASP</text>
-        <circle cx="470" cy="120" r="34" fill="#151b36" stroke="#fda4af" stroke-width="2.5"/>
-        <text x="470" y="116" fill="#fda4af">P</text><text x="470" y="136" fill="#7f88a5" font-size="10" font-weight="600">PRO</text>
+        <circle cx="140" cy="120" r="34" fill="#151b36" stroke="#a4f1fd" stroke-width="2.5"/>
+        <text x="140" y="116" fill="#a4f1fd">A</text><text x="140" y="136" fill="#7f88a5" font-size="10" font-weight="600">ALA</text>
+        <circle cx="250" cy="120" r="34" fill="#151b36" stroke="#a4f1fd" stroke-width="2.5"/>
+        <text x="250" y="116" fill="#a4f1fd">E</text><text x="250" y="136" fill="#7f88a5" font-size="10" font-weight="600">GLU</text>
+        <circle cx="360" cy="120" r="34" fill="#151b36" stroke="#a4f1fd" stroke-width="2.5"/>
+        <text x="360" y="116" fill="#a4f1fd">D</text><text x="360" y="136" fill="#7f88a5" font-size="10" font-weight="600">ASP</text>
+        <circle cx="470" cy="120" r="34" fill="#151b36" stroke="#a4f1fd" stroke-width="2.5"/>
+        <text x="470" y="116" fill="#a4f1fd">P</text><text x="470" y="136" fill="#7f88a5" font-size="10" font-weight="600">PRO</text>
       </g>
       <g stroke="#7f88a5" stroke-width="2" fill="none" class="flow" stroke-dasharray="6 6">
         <path d="M174 120 h42"/><path d="M284 120 h42"/><path d="M394 120 h42"/>
         <path d="M504 120 Q 560 120 575 160"/>
       </g>
       <g transform="translate(592,178)">
-        <path d="M0 10C-14 0 -20 -8 -20 -16a11 11 0 0 1 20 -6 11 11 0 0 1 20 6c0 8 -6 16 -20 26z" fill="none" stroke="#ad3a5a" stroke-width="2.5"/>
+        <path d="M0 10C-14 0 -20 -8 -20 -16a11 11 0 0 1 20 -6 11 11 0 0 1 20 6c0 8 -6 16 -20 26z" fill="none" stroke="#3aad64" stroke-width="2.5"/>
       </g>
-      <text x="592" y="218" fill="#ad3a5a" font-size="11" font-weight="700" text-anchor="middle">heart (claimed)</text>
+      <text x="592" y="218" fill="#3aad64" font-size="11" font-weight="700" text-anchor="middle">heart (claimed)</text>
       <text x="305" y="200" fill="#7f88a5" font-size="12" text-anchor="middle">four amino acids — and one very big claim</text>
     </svg>
-    <div class="cap">Four ordinary amino acids. The extraordinary part is what proponents say it does.</div>
+    <div class="cap">Four ordinary amino acids. The extraordinary part is what proponents say it does.<br><span style="color:#26ddf9">Sequence as reported in bioregulator literature — unverified in unregulated products.</span></div>
   </div>
   <div class="grid3">
     <div class="card sky reveal"><h3>Four amino acids</h3><p>Ala-Glu-Asp-Pro: a <strong>tetrapeptide</strong> — about as simple as peptides get. Nothing about its chemistry is remarkable; the remarkable part is entirely in the claims.</p></div>
     <div class="card teal reveal"><h3>The bioregulator idea</h3><p>From Russia’s <strong>peptide bioregulation</strong> school: short peptides that supposedly regulate specific organs. Cardiogen is the one assigned to the <strong>heart</strong>.</p></div>
     <div class="card org reveal"><h3>Not a medicine anywhere</h3><p><strong>No approval, no rigorous trials</strong>, no presence in Western cardiology. Sold in longevity and biohacker circles as a supplement-style product.</p></div>
   </div>
-  <div class="plain reveal"><div class="plabel">Plain English</div><p>Think of Cardiogen as a <strong>four-letter word</strong> that its fans claim is a <strong>command</strong> — "heart, work better." Whether heart cells take orders from four-letter words is the entire debate, and the evidence is on one side of it.</p></div></section>
+  <div class="idcheck reveal"><h3>🔍 Identity check: a name is not a guarantee</h3><p>Bioregulator literature reports Cardiogen&rsquo;s identity as <strong>Ala-Glu-Asp-Pro</strong> — that is the <em>reported</em> sequence. But products sold under the name &ldquo;Cardiogen&rdquo; are <strong>unregulated</strong>: a given vial may not match the label, and different sellers&rsquo; products may not even be the same material. <strong>The identity and purity of any marketed product must be verified before any claim about it can be evaluated.</strong> Do not assume every product labeled &ldquo;Cardiogen&rdquo; represents exactly the same substance.</p></div>
+<div class="plain reveal"><div class="plabel">Plain English</div><p>Think of Cardiogen as a <strong>four-letter word</strong> that its fans claim is a <strong>command</strong> — "heart, work better." Whether heart cells take orders from four-letter words is the entire debate, and the evidence is on one side of it.</p></div></section>
 <mini-poll slug="cardiogen-mini-ch1"
   data-question="Had you heard of Cardiogen before today?"
   data-answers='[["🆕", "Brand new"], ["👀", "Heard the name"], ["📖", "Know the basics"], ["🧪", "Know it well"]]'>
@@ -590,8 +627,8 @@ mini-poll { display: block; }
   <p class="lede">A research school grew up <strong>behind a scientific iron curtain</strong> — own journals, own rules, own product line. The testing phase never happened, in either world.</p>
 <div class="diagram reveal">
     <svg viewBox="0 0 640 260" role="img" aria-label="Timeline from bioregulator research to Cardiogen in biohacker circles">
-      <line x1="40" y1="130" x2="600" y2="130" stroke="#be123c" stroke-width="3" stroke-dasharray="8 6" class="flow"/>
-      <circle cx="70" cy="130" r="14" fill="#151b36" stroke="#fda4af" stroke-width="2.5" class="pulse"/><circle cx="70" cy="130" r="5" fill="#fda4af"/><line x1="70" y1="130" x2="70" y2="62" stroke="#3a4160" stroke-width="2"/><circle cx="236" cy="130" r="14" fill="#151b36" stroke="#be123c" stroke-width="2.5" class="pulse"/><circle cx="236" cy="130" r="5" fill="#be123c"/><line x1="236" y1="130" x2="236" y2="198" stroke="#3a4160" stroke-width="2"/><circle cx="403" cy="130" r="14" fill="#151b36" stroke="#fda4af" stroke-width="2.5" class="pulse"/><circle cx="403" cy="130" r="5" fill="#fda4af"/><line x1="403" y1="130" x2="403" y2="62" stroke="#3a4160" stroke-width="2"/><circle cx="570" cy="130" r="14" fill="#151b36" stroke="#be123c" stroke-width="2.5" class="pulse"/><circle cx="570" cy="130" r="5" fill="#be123c"/><line x1="570" y1="130" x2="570" y2="198" stroke="#3a4160" stroke-width="2"/><text x="70" y="52" fill="#fda4af" font-size="12" font-weight="800" text-anchor="middle">1970s</text><text x="70" y="68" fill="#a9b1c9" font-size="11" font-weight="700" text-anchor="middle">Bioregulation begins</text><text x="70" y="82" fill="#7f88a5" font-size="10" text-anchor="middle">St. Petersburg research</text><text x="236" y="208" fill="#fda4af" font-size="12" font-weight="800" text-anchor="middle">1980s</text><text x="236" y="224" fill="#a9b1c9" font-size="11" font-weight="700" text-anchor="middle">Organ peptides</text><text x="236" y="238" fill="#7f88a5" font-size="10" text-anchor="middle">one peptide per organ</text><text x="403" y="52" fill="#fda4af" font-size="12" font-weight="800" text-anchor="middle">1990s–2000s</text><text x="403" y="68" fill="#a9b1c9" font-size="11" font-weight="700" text-anchor="middle">Commercialization</text><text x="403" y="82" fill="#7f88a5" font-size="10" text-anchor="middle">the peptides go retail</text><text x="570" y="208" fill="#fda4af" font-size="12" font-weight="800" text-anchor="middle">2010s–20s</text><text x="570" y="224" fill="#a9b1c9" font-size="11" font-weight="700" text-anchor="middle">Biohacker adoption</text><text x="570" y="238" fill="#7f88a5" font-size="10" text-anchor="middle">longevity forums</text>
+      <line x1="40" y1="130" x2="600" y2="130" stroke="#a712be" stroke-width="3" stroke-dasharray="8 6" class="flow"/>
+      <circle cx="70" cy="130" r="14" fill="#151b36" stroke="#a4f1fd" stroke-width="2.5" class="pulse"/><circle cx="70" cy="130" r="5" fill="#a4f1fd"/><line x1="70" y1="130" x2="70" y2="62" stroke="#3a4160" stroke-width="2"/><circle cx="236" cy="130" r="14" fill="#151b36" stroke="#a712be" stroke-width="2.5" class="pulse"/><circle cx="236" cy="130" r="5" fill="#a712be"/><line x1="236" y1="130" x2="236" y2="198" stroke="#3a4160" stroke-width="2"/><circle cx="403" cy="130" r="14" fill="#151b36" stroke="#a4f1fd" stroke-width="2.5" class="pulse"/><circle cx="403" cy="130" r="5" fill="#a4f1fd"/><line x1="403" y1="130" x2="403" y2="62" stroke="#3a4160" stroke-width="2"/><circle cx="570" cy="130" r="14" fill="#151b36" stroke="#a712be" stroke-width="2.5" class="pulse"/><circle cx="570" cy="130" r="5" fill="#a712be"/><line x1="570" y1="130" x2="570" y2="198" stroke="#3a4160" stroke-width="2"/><text x="70" y="52" fill="#a4f1fd" font-size="12" font-weight="800" text-anchor="middle">1970s</text><text x="70" y="68" fill="#a9b1c9" font-size="11" font-weight="700" text-anchor="middle">Bioregulation begins</text><text x="70" y="82" fill="#7f88a5" font-size="10" text-anchor="middle">St. Petersburg research</text><text x="236" y="208" fill="#a4f1fd" font-size="12" font-weight="800" text-anchor="middle">1980s</text><text x="236" y="224" fill="#a9b1c9" font-size="11" font-weight="700" text-anchor="middle">Organ peptides</text><text x="236" y="238" fill="#7f88a5" font-size="10" text-anchor="middle">one peptide per organ</text><text x="403" y="52" fill="#a4f1fd" font-size="12" font-weight="800" text-anchor="middle">1990s–2000s</text><text x="403" y="68" fill="#a9b1c9" font-size="11" font-weight="700" text-anchor="middle">Commercialization</text><text x="403" y="82" fill="#7f88a5" font-size="10" text-anchor="middle">the peptides go retail</text><text x="570" y="208" fill="#a4f1fd" font-size="12" font-weight="800" text-anchor="middle">2010s–20s</text><text x="570" y="224" fill="#a9b1c9" font-size="11" font-weight="700" text-anchor="middle">Biohacker adoption</text><text x="570" y="238" fill="#7f88a5" font-size="10" text-anchor="middle">longevity forums</text>
     </svg>
     <div class="cap">Fifty years from Soviet labs to internet longevity forums — without passing through rigorous trials.</div>
   </div>
@@ -610,12 +647,141 @@ mini-poll { display: block; }
   <p class="lede">Not "how it works" — <strong>what proponents claim</strong>: target the heart, bind DNA, tune genes, support function. "Claimed" does heroic work in every sentence.</p>
 <div class="diagram reveal">
     <svg viewBox="0 0 640 240" role="img" aria-label="Four-step claimed mechanism of Cardiogen">
-      <g font-size="13" font-weight="800" text-anchor="middle"><rect x="20" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#fda4af" stroke-width="2"/><text x="84" y="105" fill="1">TARGET · #fda4af</text><text x="84" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Peptide reaches</text><text x="84" y="146" fill="#a9b1c9" font-size="11" font-weight="600">heart tissue (claimed)</text><rect x="172" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#be123c" stroke-width="2"/><text x="236" y="105" fill="2">BIND · #be123c</text><text x="236" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Interacts with DNA</text><text x="236" y="146" fill="#a9b1c9" font-size="11" font-weight="600">in cells (claimed)</text><rect x="324" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#ad3a5a" stroke-width="2"/><text x="388" y="105" fill="3">REGULATE · #ad3a5a</text><text x="388" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Gene activity tuned</text><text x="388" y="146" fill="#a9b1c9" font-size="11" font-weight="600">toward healthy (claimed)</text><rect x="476" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#be123c" stroke-width="2"/><text x="540" y="105" fill="4">SUPPORT · #be123c</text><text x="540" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Cardiac function</text><text x="540" y="146" fill="#a9b1c9" font-size="11" font-weight="600">improved (claimed)</text></g>
+      <g font-size="13" font-weight="800" text-anchor="middle"><rect x="20" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#a4f1fd" stroke-width="2"/><text x="84" y="105" fill="#a4f1fd">TARGET</text><text x="84" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Peptide reaches</text><text x="84" y="146" fill="#a9b1c9" font-size="11" font-weight="600">heart tissue (claimed)</text><rect x="172" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#a712be" stroke-width="2"/><text x="236" y="105" fill="#a712be">BIND</text><text x="236" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Interacts with DNA</text><text x="236" y="146" fill="#a9b1c9" font-size="11" font-weight="600">in cells (claimed)</text><rect x="324" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#3aad64" stroke-width="2"/><text x="388" y="105" fill="#3aad64">REGULATE</text><text x="388" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Gene activity tuned</text><text x="388" y="146" fill="#a9b1c9" font-size="11" font-weight="600">toward healthy (claimed)</text><rect x="476" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#a712be" stroke-width="2"/><text x="540" y="105" fill="#a712be">SUPPORT</text><text x="540" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Cardiac function</text><text x="540" y="146" fill="#a9b1c9" font-size="11" font-weight="600">improved (claimed)</text></g>
       <g stroke="#7f88a5" stroke-width="2" fill="none" class="flow" stroke-dasharray="6 6"><path d="M148 120 h24"/><path d="M300 120 h24"/><path d="M452 120 h24"/></g>
       <text x="320" y="220" fill="#7f88a5" font-size="12" text-anchor="middle">Every step is "as claimed by proponents" — none is established science</text>
     </svg>
     <div class="cap">The claimed chain. Note the word doing all the work: claimed.</div>
-  </div><div class="ebar"><div class="row"><span class="t">Proponent literature</span><span class="v">asserts effects</span></div><div class="track"><div class="fill" style="--w:45%;background:linear-gradient(90deg,#be123c,#fda4af)"></div></div><div class="note">Russian-language papers describe benefits — mostly uncontrolled observations, not trials.</div></div><div class="ebar"><div class="row"><span class="t">Independent replication</span><span class="v">essentially none</span></div><div class="track"><div class="fill" style="--w:10%;background:linear-gradient(90deg,#fda4af,#ad3a5a)"></div></div><div class="note">Western labs have not replicated the core claims; the bioregulator framework itself is unaccepted outside its school.</div></div><div class="ebar"><div class="row"><span class="t">Randomized controlled trials</span><span class="v">none found</span></div><div class="track"><div class="fill" style="--w:5%;background:linear-gradient(90deg,#ad3a5a,#be123c)"></div></div><div class="note">No rigorous RCTs of Cardiogen in Western journals. The gold-standard evidence tier is empty.</div></div><div class="ebar"><div class="row"><span class="t">Regulatory review</span><span class="v">never happened</span></div><div class="track"><div class="fill" style="--w:3%;background:linear-gradient(90deg,#3a4160,#3a4160)"></div></div></div>
+  </div><div class="alegend reveal"><span class="asolid"></span><span><strong>solid</strong> = demonstrated relationship</span><span class="adashed"></span><span><strong>dashed</strong> = hypothesis / proposed mechanism</span><span style="margin-left:auto">This is the visual language of every diagram on this page.</span></div><div class="diagram reveal">
+    <svg viewBox="0 0 640 430" role="img" aria-label="Zoom from the heart down to a single cardiomyocyte, with Cardiogen placed in the extracellular space">
+      <defs>
+        <marker id="arrS" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a9b1c9"/></marker>
+      </defs>
+      <rect x="16" y="20" width="184" height="280" rx="14" fill="#0b0e1c" stroke="#a4f1fd" stroke-width="2" class="seqr1"/>
+      <text x="108" y="50" fill="#a4f1fd" font-size="12" font-weight="800" text-anchor="middle">1 &#183; THE ORGAN</text>
+      <circle cx="108" cy="158" r="58" fill="none" stroke="#a4f1fd" stroke-width="2" class="ringp"/>
+      <path d="M108 205 C88 187 62 169 62 141 C62 121 76 111 90 111 C99 111 105 116 108 122 C111 116 117 111 126 111 C140 111 154 121 154 141 C154 169 128 187 108 205 Z" fill="rgba(167,18,190,.25)" stroke="#a4f1fd" stroke-width="2.5"/>
+      <text x="108" y="262" fill="#a9b1c9" font-size="11" font-weight="700" text-anchor="middle">the heart</text>
+      <text x="108" y="280" fill="#7f88a5" font-size="10" text-anchor="middle">where it would have to work</text>
+      <line x1="202" y1="160" x2="210" y2="160" stroke="#a9b1c9" stroke-width="2.5" marker-end="url(#arrS)"/>
+      <text x="206" y="148" fill="#7f88a5" font-size="9" text-anchor="middle">zoom</text>
+      <rect x="212" y="20" width="184" height="280" rx="14" fill="#0b0e1c" stroke="#a712be" stroke-width="2" class="seqr2"/>
+      <text x="304" y="50" fill="#a712be" font-size="12" font-weight="800" text-anchor="middle">2 &#183; THE TISSUE</text>
+      <rect x="228" y="84" width="152" height="26" rx="8" fill="#141a33" stroke="#a712be" stroke-width="2"/>
+      <line x1="244" y1="84" x2="244" y2="110" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <line x1="260" y1="84" x2="260" y2="110" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <line x1="276" y1="84" x2="276" y2="110" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <line x1="292" y1="84" x2="292" y2="110" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <line x1="308" y1="84" x2="308" y2="110" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <line x1="324" y1="84" x2="324" y2="110" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <line x1="340" y1="84" x2="340" y2="110" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <line x1="356" y1="84" x2="356" y2="110" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <rect x="228" y="120" width="152" height="26" rx="8" fill="#141a33" stroke="#a712be" stroke-width="2"/>
+      <line x1="244" y1="120" x2="244" y2="146" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <line x1="260" y1="120" x2="260" y2="146" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <line x1="276" y1="120" x2="276" y2="146" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <line x1="292" y1="120" x2="292" y2="146" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <line x1="308" y1="120" x2="308" y2="146" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <line x1="324" y1="120" x2="324" y2="146" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <line x1="340" y1="120" x2="340" y2="146" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <line x1="356" y1="120" x2="356" y2="146" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <rect x="228" y="156" width="152" height="26" rx="8" fill="#141a33" stroke="#a712be" stroke-width="2"/>
+      <line x1="244" y1="156" x2="244" y2="182" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <line x1="260" y1="156" x2="260" y2="182" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <line x1="276" y1="156" x2="276" y2="182" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <line x1="292" y1="156" x2="292" y2="182" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <line x1="308" y1="156" x2="308" y2="182" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <line x1="324" y1="156" x2="324" y2="182" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <line x1="340" y1="156" x2="340" y2="182" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <line x1="356" y1="156" x2="356" y2="182" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <rect x="228" y="192" width="152" height="26" rx="8" fill="#141a33" stroke="#a712be" stroke-width="2"/>
+      <line x1="244" y1="192" x2="244" y2="218" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <line x1="260" y1="192" x2="260" y2="218" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <line x1="276" y1="192" x2="276" y2="218" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <line x1="292" y1="192" x2="292" y2="218" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <line x1="308" y1="192" x2="308" y2="218" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <line x1="324" y1="192" x2="324" y2="218" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <line x1="340" y1="192" x2="340" y2="218" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <line x1="356" y1="192" x2="356" y2="218" stroke="#a712be" stroke-width="1.5" opacity=".45"/>
+      <text x="304" y="262" fill="#a9b1c9" font-size="11" font-weight="700" text-anchor="middle">cardiac muscle</text>
+      <text x="304" y="280" fill="#7f88a5" font-size="10" text-anchor="middle">striated, contracting fibers</text>
+      <line x1="398" y1="160" x2="406" y2="160" stroke="#a9b1c9" stroke-width="2.5" marker-end="url(#arrS)"/>
+      <text x="402" y="148" fill="#7f88a5" font-size="9" text-anchor="middle">zoom</text>
+      <rect x="408" y="20" width="216" height="280" rx="14" fill="#0b0e1c" stroke="#3aad64" stroke-width="2" class="seqr3"/>
+      <text x="516" y="50" fill="#3aad64" font-size="12" font-weight="800" text-anchor="middle">3 &#183; THE CELL</text>
+      <rect x="430" y="58" width="172" height="22" rx="11" fill="#161020" stroke="#a712be" stroke-width="2"/>
+      <circle cx="448" cy="69" r="4" fill="#a712be" class="glow-pulse"/>
+      <circle cx="584" cy="69" r="4" fill="#a712be" class="glow-pulse"/>
+      <text x="516" y="74" fill="#a4f1fd" font-size="10" font-weight="700" text-anchor="middle">CAPILLARY &#183; BLOOD</text>
+      <text x="516" y="94" fill="#26ddf9" font-size="9" font-weight="800" text-anchor="middle">EXTRACELLULAR &#183; STAYS HERE</text>
+      <rect x="424" y="98" width="184" height="28" rx="8" fill="none" stroke="#26ddf9" stroke-width="2" stroke-dasharray="5 4"/>
+      <circle cx="440" cy="112" r="5" fill="#a4f1fd" class="travx"/>
+      <circle cx="452" cy="112" r="5" fill="#a4f1fd" class="travx" style="animation-delay:1.1s"/>
+      <circle cx="464" cy="112" r="5" fill="#a4f1fd" class="travx" style="animation-delay:2.2s"/>
+      <g><circle cx="516" cy="133" r="8" fill="#0b0e1c" stroke="#26ddf9" stroke-width="2"/><line x1="510" y1="127" x2="522" y2="139" stroke="#26ddf9" stroke-width="2"/></g>
+      <rect x="430" y="140" width="172" height="122" rx="22" fill="#10142a" stroke="#a4f1fd" stroke-width="2.5"/>
+      <ellipse cx="516" cy="196" rx="26" ry="16" fill="#171a30" stroke="#3aad64" stroke-width="2"/>
+      <text x="516" y="200" fill="#a9b1c9" font-size="10" font-weight="700" text-anchor="middle">NUCLEUS</text>
+      <text x="516" y="250" fill="#7f88a5" font-size="10" text-anchor="middle">cytoplasm</text>
+      <text x="516" y="282" fill="#a9b1c9" font-size="10" font-weight="700" text-anchor="middle">cardiomyocyte &#183; heart muscle cell</text>
+      <line x1="60" y1="340" x2="110" y2="340" stroke="#a9b1c9" stroke-width="3"/>
+      <text x="122" y="344" fill="#a9b1c9" font-size="11">solid = demonstrated relationship</text>
+      <line x1="380" y1="340" x2="430" y2="340" stroke="#7f88a5" stroke-width="3" stroke-dasharray="6 4"/>
+      <text x="442" y="344" fill="#a9b1c9" font-size="11">dashed = hypothesis / proposed</text>
+      <text x="320" y="378" fill="#7f88a5" font-size="11" text-anchor="middle">No established route into the cell or nucleus exists &#8212; so none is drawn.</text>
+    </svg>
+    <div class="cap">Zooming from the organ to the cell: blood, extracellular space, membrane, cytoplasm and nucleus stay distinct. Cardiogen is placed where any visitor arrives first — outside the cell.</div>
+  </div><h3 class="sech reveal">Why Cardiogen? The tissue-specificity pitch</h3>
+  <div class="grid3">
+    <div class="card sky reveal"><h3>One organ, one peptide</h3><p>The bioregulator school&rsquo;s core claim: each short peptide <strong>&ldquo;belongs to&rdquo; one organ</strong> — Cardiogen to the heart, others to brain, thymus, eyes. Tissue-specificity is the brand.</p></div>
+    <div class="card teal reveal"><h3>What that would require</h3><p>A peptide that prefers the heart would need to <strong>reach cardiac tissue, signal to cardiomyocytes, and act there specifically</strong>. No receptor, transporter, or targeting mechanism for Cardiogen has ever been established.</p></div>
+    <div class="card org reveal"><h3>Assignment, not mechanism</h3><p>The &ldquo;cardiac&rdquo; label is an <strong>assignment from the catalog</strong>, not a demonstrated property of the molecule. The map came before the territory.</p></div>
+  </div><div class="diagram reveal">
+    <svg viewBox="0 0 640 400" role="img" aria-label="Realistic repair sequence: stress, proposed response, gradual change, possible tissue effect over weeks">
+      <defs>
+        <marker id="arrD" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7f88a5"/></marker>
+      </defs>
+      <rect x="16" y="20" width="138" height="210" rx="14" fill="#0b0e1c" stroke="#a9b1c9" stroke-width="2" class="seqr1"/>
+      <text x="85" y="48" fill="#a9b1c9" font-size="10" font-weight="800" text-anchor="middle">1 &#183; STRESS / INJURY</text>
+      <rect x="50" y="70" width="70" height="100" rx="12" fill="#141a33" stroke="#a712be" stroke-width="2"/>
+      <polyline points="58,90 68,105 60,122 70,140 62,158" fill="none" stroke="#a712be" stroke-width="2"/>
+      <ellipse cx="92" cy="100" rx="11" ry="8" fill="#171a30" stroke="#3aad64" stroke-width="1.5"/>
+      <text x="85" y="200" fill="#7f88a5" font-size="10" text-anchor="middle">real biology</text>
+      <line x1="154" y1="125" x2="168" y2="125" stroke="#7f88a5" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrD)"/>
+      <rect x="170" y="20" width="138" height="210" rx="14" fill="#0b0e1c" stroke="#26ddf9" stroke-width="2" stroke-dasharray="7 5" class="seqr2"/>
+      <text x="239" y="48" fill="#26ddf9" font-size="10" font-weight="800" text-anchor="middle">2 &#183; PROPOSED RESPONSE</text>
+      <ellipse cx="239" cy="120" rx="54" ry="64" fill="none" stroke="#26ddf9" stroke-width="2" stroke-dasharray="5 4" class="glow-pulse"/>
+      <rect x="204" y="70" width="70" height="100" rx="12" fill="#141a33" stroke="#a9b1c9" stroke-width="2"/>
+      <ellipse cx="239" cy="110" rx="13" ry="9" fill="#171a30" stroke="#3aad64" stroke-width="1.5"/>
+      <text x="239" y="200" fill="#7f88a5" font-size="10" text-anchor="middle">hypothesis</text>
+      <line x1="308" y1="125" x2="322" y2="125" stroke="#7f88a5" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrD)"/>
+      <rect x="324" y="20" width="138" height="210" rx="14" fill="#0b0e1c" stroke="#26ddf9" stroke-width="2" stroke-dasharray="7 5" class="seqr3"/>
+      <text x="393" y="48" fill="#26ddf9" font-size="10" font-weight="800" text-anchor="middle">3 &#183; GRADUAL CHANGE</text>
+      <rect x="359" y="70" width="70" height="100" rx="12" fill="#16203a" stroke="#a4f1fd" stroke-width="2"/>
+      <ellipse cx="394" cy="110" rx="13" ry="9" fill="#171a30" stroke="#3aad64" stroke-width="1.5"/>
+      <text x="393" y="200" fill="#7f88a5" font-size="10" text-anchor="middle">days to weeks</text>
+      <line x1="462" y1="125" x2="476" y2="125" stroke="#7f88a5" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrD)"/>
+      <rect x="478" y="20" width="138" height="210" rx="14" fill="#0b0e1c" stroke="#7f88a5" stroke-width="2" stroke-dasharray="7 5" class="seqr4"/>
+      <text x="547" y="48" fill="#7f88a5" font-size="10" font-weight="800" text-anchor="middle">4 &#183; TISSUE CONSEQUENCE</text>
+      <rect x="494" y="80" width="36" height="64" rx="10" fill="#141a33" stroke="#a9b1c9" stroke-width="1.5"/>
+      <rect x="534" y="92" width="36" height="64" rx="10" fill="#141a33" stroke="#a9b1c9" stroke-width="1.5"/>
+      <rect x="574" y="80" width="36" height="64" rx="10" fill="#141a33" stroke="#a9b1c9" stroke-width="1.5"/>
+      <text x="547" y="200" fill="#7f88a5" font-size="10" text-anchor="middle">theoretical</text>
+      <line x1="40" y1="280" x2="600" y2="280" stroke="#7f88a5" stroke-width="2"/>
+      <line x1="120" y1="272" x2="120" y2="288" stroke="#a9b1c9" stroke-width="2"/>
+      <line x1="320" y1="272" x2="320" y2="288" stroke="#a9b1c9" stroke-width="2"/>
+      <line x1="520" y1="272" x2="520" y2="288" stroke="#a9b1c9" stroke-width="2"/>
+      <text x="120" y="268" fill="#a9b1c9" font-size="10" font-weight="700" text-anchor="middle">hours</text>
+      <text x="320" y="268" fill="#a9b1c9" font-size="10" font-weight="700" text-anchor="middle">days</text>
+      <text x="520" y="268" fill="#a9b1c9" font-size="10" font-weight="700" text-anchor="middle">weeks</text>
+      <text x="120" y="298" fill="#7f88a5" font-size="10" text-anchor="middle">molecular changes</text>
+      <text x="320" y="298" fill="#7f88a5" font-size="10" text-anchor="middle">cellular changes</text>
+      <text x="520" y="298" fill="#7f88a5" font-size="10" text-anchor="middle">tissue-level outcomes &#8212; much later</text>
+      <text x="320" y="340" fill="#7f88a5" font-size="11" text-anchor="middle">No instant fixes: scar tissue does not vanish, no new heart layer grows in seconds.</text>
+      <text x="320" y="360" fill="#7f88a5" font-size="11" text-anchor="middle">Regeneration of infarcted myocardium by any peptide is not an established outcome.</text>
+    </svg>
+    <div class="cap">The honest order: injury &#8594; proposed cellular response &#8594; gradual behavior change over days to weeks &#8594; only then any possible tissue effect. Molecular changes precede cellular ones; cellular precede tissue-level ones.</div>
+  </div><div class="ebar reveal"><div class="row"><span class="t">Proponent literature</span><span class="v">asserts effects</span></div><div class="track"><div class="fill" style="--w:45%;background:linear-gradient(90deg,#a712be,#a4f1fd)"></div></div><div class="note">Russian-language papers describe benefits — mostly uncontrolled observations, not trials.</div></div><div class="ebar reveal"><div class="row"><span class="t">Independent replication</span><span class="v">essentially none</span></div><div class="track"><div class="fill" style="--w:10%;background:linear-gradient(90deg,#a4f1fd,#3aad64)"></div></div><div class="note">Western labs have not replicated the core claims; the bioregulator framework itself is unaccepted outside its school.</div></div><div class="ebar reveal"><div class="row"><span class="t">Randomized controlled trials</span><span class="v">none found</span></div><div class="track"><div class="fill" style="--w:5%;background:linear-gradient(90deg,#3aad64,#a712be)"></div></div><div class="note">No rigorous RCTs of Cardiogen in Western journals. The gold-standard evidence tier is empty.</div></div><div class="ebar reveal"><div class="row"><span class="t">Regulatory review</span><span class="v">never happened</span></div><div class="track"><div class="fill" style="--w:3%;background:linear-gradient(90deg,#3a4160,#3a4160)"></div></div></div>
   <div class="plain reveal"><div class="plabel">Plain English</div><p>The claimed pitch: <strong>target → bind → regulate → support</strong>. A four-letter word that <strong>reprograms the heart’s software</strong>. It would be the most elegant medicine ever — if any of it were shown to happen. "Claimed" is doing heroic work in every sentence.</p></div></section>
 <mini-poll slug="cardiogen-mini-ch3"
   data-question="Which claimed step is the biggest leap?"
@@ -632,6 +798,12 @@ mini-poll { display: block; }
     <div class="card teal reveal"><h3>No Western replication</h3><p>The core framework — <strong>organ-specific short peptides regulating genes</strong> — has not been replicated or accepted outside its school. Extraordinary claims, ordinary evidence.</p></div>
     <div class="card org reveal"><h3>The RCT shelf is empty</h3><p><strong>No randomized controlled trials</strong>, no regulatory review, no approval. For a heart product, that is not a gap — it is the whole story.</p></div>
   </div>
+  <h3 class="sech reveal">What the research actually shows — the evidence ladder</h3>
+  <div class="ebar reveal"><div class="row"><span class="t">Biochemical / lab findings</span><span class="v">thin, proponent literature</span></div><div class="track"><div class="fill" style="--w:18%;background:linear-gradient(90deg,#a712be,#a4f1fd)"></div></div><div class="note">Bench-level reports from within the bioregulator school — not independently replicated.</div></div>
+  <div class="ebar reveal"><div class="row"><span class="t">Cell / tissue research</span><span class="v">thin</span></div><div class="track"><div class="fill" style="--w:12%;background:linear-gradient(90deg,#a4f1fd,#3aad64)"></div></div><div class="note">Sparse, uncontrolled; the organ-specific gene-tuning framework is unaccepted outside its school.</div></div>
+  <div class="ebar reveal"><div class="row"><span class="t">Animal research</span><span class="v">thin, uncontrolled</span></div><div class="track"><div class="fill" style="--w:8%;background:linear-gradient(90deg,#3aad64,#a712be)"></div></div><div class="note">No rigorous animal trials recognized by mainstream cardiology.</div></div>
+  <div class="ebar reveal"><div class="row"><span class="t">Human clinical evidence</span><span class="v">none</span></div><div class="track"><div class="fill" style="--w:3%;background:linear-gradient(90deg,#3a4160,#3a4160)"></div></div><div class="note">No randomized controlled trials. Anecdotes are not clinical evidence.</div></div>
+  <div class="ebar reveal"><div class="row"><span class="t">Regulatory approval</span><span class="v">none</span></div><div class="track"><div class="fill" style="--w:3%;background:linear-gradient(90deg,#3a4160,#3a4160)"></div></div><div class="note">Not approved as a medicine anywhere in the world.</div></div>
   <div class="plain reveal"><div class="plabel">Plain English</div><p>Cardiogen’s evidence file is a <strong>library in a language most cardiologists can’t read</strong>, full of books with no control groups. Western medicine’s shelf for it is <strong>empty</strong> — not because of a conspiracy, but because nobody ran the trials.</p></div></section>
 <mini-poll slug="cardiogen-mini-ch4"
   data-question="No randomized trials — your reaction?"
@@ -650,12 +822,12 @@ mini-poll { display: block; }
   </div><div class="diagram reveal">
     <svg viewBox="0 0 640 230" role="img" aria-label="Cardiogen claims and cardiology as two paths to heart health">
       <g font-size="13" font-weight="800" text-anchor="middle">
-        <rect x="40" y="40" width="180" height="90" rx="14" fill="#151b36" stroke="#fda4af" stroke-width="2"/>
-        <text x="130" y="75" fill="#fda4af">Cardiogen</text>
+        <rect x="40" y="40" width="180" height="90" rx="14" fill="#151b36" stroke="#a4f1fd" stroke-width="2"/>
+        <text x="130" y="75" fill="#a4f1fd">Cardiogen</text>
         <text x="130" y="98" fill="#a9b1c9" font-size="11" font-weight="600">bioregulator claim</text>
         <text x="130" y="114" fill="#a9b1c9" font-size="11" font-weight="600">tradition, no trials</text>
-        <rect x="420" y="40" width="180" height="90" rx="14" fill="#151b36" stroke="#be123c" stroke-width="2"/>
-        <text x="510" y="75" fill="#be123c">Cardiology</text>
+        <rect x="420" y="40" width="180" height="90" rx="14" fill="#151b36" stroke="#a712be" stroke-width="2"/>
+        <text x="510" y="75" fill="#a712be">Cardiology</text>
         <text x="510" y="98" fill="#a9b1c9" font-size="11" font-weight="600">evidence-based care</text>
         <text x="510" y="114" fill="#a9b1c9" font-size="11" font-weight="600">huge RCTs</text>
         <rect x="230" y="150" width="180" height="60" rx="14" fill="#151b36" stroke="#7f88a5" stroke-width="2" stroke-dasharray="7 5"/>
@@ -668,18 +840,90 @@ mini-poll { display: block; }
     </svg>
     <div class="cap">One runs on tradition and testimonials; the other on mortality data from tens of thousands.</div>
   </div>
+  <h3 class="sech reveal">Cardiogen vs established cardiovascular therapies — the full comparison</h3>
+  <div class="twrap reveal"><table class="trial">
+    <tr><th></th><th>Cardiogen (bioregulator claim)</th><th>Established cardiology</th></tr>
+    <tr><td>Evidence level</td><td>Uncontrolled observations and tradition; <strong>no randomized trials</strong></td><td>Large randomized trials in <strong>tens of thousands</strong> of patients</td></tr>
+    <tr><td>Proposed mechanism</td><td>Short peptide &ldquo;tunes&rdquo; heart genes <strong>(claimed, unproven)</strong>; no receptor or target established</td><td>Defined molecular targets — cholesterol, clotting, blood pressure, rhythm</td></tr>
+    <tr><td>Clinical validation</td><td><strong>None</strong> — absent from every cardiology guideline</td><td>Guideline-endorsed; mortality benefit demonstrated</td></tr>
+    <tr><td>Intended role</td><td>Sold as a <strong>longevity/biohacker supplement</strong></td><td>Treatment and prevention of heart disease</td></tr>
+    <tr><td>Product oversight</td><td><strong>None</strong> — unregulated products of unknown content</td><td>Regulated medicines with manufacturing quality control</td></tr>
+  </table></div>
+  <div class="duo">
+    <div class="card teal reveal"><h3>What proponents say it does</h3><ul class="do">
+      <li><strong>Reaches heart tissue</strong> after use <em>(claimed)</em></li>
+      <li><strong>Tunes cardiomyocyte gene activity</strong> toward healthy function <em>(claimed)</em></li>
+      <li><strong>Supports cardiac function</strong> at the cellular level <em>(claimed)</em></li>
+    </ul></div>
+    <div class="card org reveal"><h3>What that does NOT prove</h3><ul class="dont">
+      <li>Does <strong>not</strong> establish that it <strong>prevents heart attacks</strong></li>
+      <li>Does <strong>not</strong> establish that it <strong>reverses coronary artery disease</strong></li>
+      <li>Does <strong>not</strong> establish that it <strong>regenerates infarcted myocardium</strong></li>
+      <li>Does <strong>not</strong> establish that it <strong>extends lifespan</strong></li>
+    </ul></div>
+  </div>
   <div class="plain reveal"><div class="plabel">Plain English</div><p>Cardiogen is a <strong>folk song about the heart</strong>; cardiology is a <strong>hospital</strong>. Folk songs are lovely. When the chest pain starts, you want the hospital — the one with <strong>proof it keeps people alive</strong>.</p></div></section>
 <mini-poll slug="cardiogen-mini-ch5"
-  data-question="Cardiogen vs cardiology — where do you land?"
-  data-answers='[["❤️", "Cardiogen intrigues me"], ["🏥", "Cardiology has the proof"], ["🤝", "Different worlds"], ["📊", "Trials or nothing"]]'>
+  data-question="Cardiogen vs established heart medicine — what stands out most?"
+  data-answers='[["📊", "The evidence gap is decisive"], ["🔬", "The mechanism is the weak link"], ["🏥", "Therapies have the proof"], ["🤔", "Tradition still deserves a test"]]'>
 </mini-poll>
-<!-- ============ CHAPTER 6 ============ -->
+<!-- ============ CHAPTER 6 — Potential Benefits ============ -->
 <section class="chapter" id="ch6">
-  <span class="eyebrow"><span class="n">06</span>What people say</span>
-  <h2>Reports from the <span class="hl">wild</span></h2>
-  <p class="lede">Mostly <strong>longevity and biohacker forums</strong> — people stacking organ peptides. Stories, not data, with the heart as the stakes.</p>
-
-  <p class="lede" style="margin-bottom:1.2rem">Mostly <strong>longevity and biohacker forums</strong> — people stacking organ peptides and reporting back. Stories, not data, with the heart as the stakes.</p>
+  <span class="eyebrow"><span class="n">06</span>Potential benefits</span>
+  <h2>Potential <span class="hl">benefits</span></h2>
+  <p class="lede">If Cardiogen worked as claimed, the benefits would be enormous — a heart tuned at the gene level. <strong>It is not established that it works at all.</strong> So this chapter is a map of claim vs evidence, tiered honestly: the established tier is nearly empty, the emerging tier is thin, and the stories are just stories.</p>
+  <div class="safety-grid">
+    <div class="scard lvl-known reveal"><span class="level">Established</span><h4>A defined chemical identity</h4><p><strong>Established:</strong> Cardiogen is <strong>Ala-Glu-Asp-Pro</strong> — a specific, synthesizable four-amino-acid sequence. Its identity is chemistry. Nothing about what it does in a living body follows from that.</p></div>
+    <div class="scard lvl-known reveal"><span class="level">Established</span><h4>No established clinical benefit</h4><p><strong>Established:</strong> no randomized trial, no regulatory review, no guideline mention — anywhere. The <strong>absence of evidence is itself an established fact</strong>, and for a heart product, the decisive one.</p></div>
+  </div>
+  <div class="xtile reveal"><span class="xdot"></span><span class="xlead">Think of it this way:</span> having the sheet music doesn't mean the orchestra played it. Cardiogen's benefits file is mostly <strong>sheet music</strong> — a defined molecule — with no recording of a performance.</div>
+  <div class="safety-grid">
+    <div class="scard lvl-theory reveal"><span class="level">Emerging</span><h4>Gene-expression shifts in lab models</h4><p><strong>Predicted / emerging:</strong> the bioregulator school reports gene-expression changes in cell and tissue models. Small studies, one tradition, unverified elsewhere — a <strong>signal, not a benefit</strong>.</p></div>
+    <div class="scard lvl-theory reveal"><span class="level">Emerging</span><h4>Cardioprotective hints in animal work</h4><p><strong>Emerging:</strong> sparse animal observations are cited by proponents as heart-supporting. Uncontrolled and unreplicated — the kind of hint that <strong>motivates a trial, never a conclusion</strong>.</p></div>
+  </div>
+  <div class="ulegend reveal"><span class="udot" role="img" aria-label="Unverified anecdote"></span><p><strong>Unverified anecdote</strong> — the pulsing dot marks paraphrased recurring themes from forums and social media: not verified, not evidence.</p></div>
+  <div class="anec-grid">
+    <div class="anec reveal"><div class="anec-head"><h4>The ejection-fraction claim</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>Recurring theme: users citing <strong>improved cardiac numbers</strong> after months of use. <strong>Caveat:</strong> numbers move for many reasons — medication changes, lifestyle, measurement noise. Without controls, attribution is storytelling.</p></div>
+    <div class="anec reveal"><div class="anec-head"><h4>The "worth a try" shrug</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>Recurring theme: "it's just amino acids — my heart, my choice." <strong>Caveat:</strong> "just amino acids" skips the unknown-contents problem, and the heart is not the organ for shrugs.</p></div>
+  </div>
+  <div class="folk-note reveal"><p>The fuller set of recurring themes lives in <strong>Anecdotal reports</strong> (chapter 08) — kept quarantined there on purpose. Anecdotes describe what people said; they don't establish what works.</p></div>
+  <div class="plain reveal"><div class="plabel">The honest summary</div><p>Cardiogen has <strong>no established benefit</strong> — that is the established fact. What exists: a defined molecule, thin single-tradition lab signals, and vivid stories. For the heart, the gap between claim and proof is the whole story.</p></div>
+</section>
+<mini-poll slug="cardiogen-mini-benefits"
+  data-question="The benefits file is mostly empty — what would fill it?"
+  data-answers='[["🔬", "A real randomized trial"],["📊", "Independent replication"],["🏥", "A guideline mention"],["😐", "Nothing would"]]'>
+</mini-poll>
+<!-- ============ CHAPTER 7 — Who It May Suit ============ -->
+<section class="chapter" id="ch7">
+  <span class="eyebrow"><span class="n">07</span>Who it may suit</span>
+  <h2>Who it may suit — <span class="hl">and who it should not</span></h2>
+  <p class="lede">There is <strong>no established medical indication</strong> for Cardiogen — no approval, no guideline, no proven use. So this chapter is <strong>informational guidance only</strong>: who the research conversation is actually about, and who should be especially cautious.</p>
+  <div class="grid2">
+    <div class="card teal reveal"><h3>✅ Who the research conversation may be relevant to</h3><ul>
+      <li><strong>Researchers studying bioregulator theory</strong> — the academic conversation where Cardiogen's claims actually live</li>
+      <li><strong>Evidence-minded readers</strong> evaluating the claims against the evidence ladder (chapter 04)</li>
+      <li><strong>Anyone comparing traditions vs trials</strong> — the folk-song-vs-hospital distinction (chapter 05)</li>
+      <li><strong>Skeptics who want the full picture</strong> — including the anecdotes, clearly labeled (chapter 08)</li>
+    </ul></div>
+    <div class="card org reveal"><h3>🚫 Who it may not suit — extra caution</h3><ul>
+      <li><strong>Anyone with a heart condition</strong> — chest symptoms need a cardiologist, not an unproven peptide; false confidence is the gravest risk</li>
+      <li><strong>People on heart medications</strong> — no interaction data exists; the overlap zone is blank</li>
+      <li><strong>Anyone seeking proven cardiac care</strong> — established cardiology has mortality data from tens of thousands; this has none</li>
+      <li><strong>Anyone expecting a tested, regulated product</strong> — what is sold as Cardiogen has no quality oversight</li>
+    </ul></div>
+  </div>
+  <div class="plain reveal"><div class="plabel">General information</div><p><strong>This is general information, not personal medical advice.</strong> Heart-health decisions belong with a licensed clinician — ideally a cardiologist — not a web page.</p></div>
+</section>
+<mini-poll slug="cardiogen-mini-fit"
+  data-question="Who should be most cautious here?"
+  data-answers='[["🫀", "Heart patients"],["💊", "People on heart meds"],["🧪", "Biohackers stacking peptides"],["⚖️", "Everyone equally"]]'>
+</mini-poll>
+<!-- ============ CHAPTER 8 ============ -->
+<section class="chapter" id="ch8">
+  <span class="eyebrow"><span class="n">08</span>Anecdotal reports</span>
+  <h2>Anecdotal — <span class="hl">not clinical evidence</span></h2>
+  <div class="isobanner reveal">🔒 <strong>ISOLATED ON PURPOSE.</strong> Everything in this chapter is unverified anecdote — paraphrased recurring themes from longevity and biohacker forums. It sits apart from the science chapters because it is not science.</div>
+  <p class="lede">Mostly <strong>longevity and biohacker forums</strong> — people stacking organ peptides and reporting back. Stories, not data, with the heart as the stakes.</p>
   <div class="ulegend reveal"><span class="udot" role="img" aria-label="Unverified anecdote"></span><p><strong>Unverified anecdote</strong> — the pulsing dot marks a paraphrased recurring theme from forums and social media: not verified, not evidence.</p></div>
   <div class="anec-grid">
     <div class="anec reveal"><div class="anec-head"><h4>The longevity stack</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>&ldquo;Added it to my longevity stack — heart is the priority after 40.&rdquo; <strong>Caveat:</strong> stacks of unproven peptides create <strong>unproven-squared</strong> — each addition multiplies the unknowns.</p><div class="caveat">Pattern: stacking culture: more ingredients, less knowledge.</div></div>
@@ -692,13 +936,13 @@ mini-poll { display: block; }
     <div class="anec reveal"><div class="anec-head"><h4>The cardiologist shrug</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>&ldquo;Asked my cardiologist — had never heard of it.&rdquo; <strong>Caveat:</strong> mainstream unawareness is expected for untested products — <strong>absence from guidelines is the evidence speaking</strong>.</p><div class="caveat">Pattern: the guideline gap as information.</div></div>
   </div>
   <div class="folk-note reveal"><p>Read these the way scientists read case reports: <strong>useful for generating hypotheses, useless for proving them</strong>. When the organ is the heart, "your mileage may vary" is not a disclaimer — it is a warning.</p></div></section>
-<mini-poll slug="cardiogen-mini-ch6"
-  data-question="Longevity-forum stories — how do you read them?"
-  data-answers='[["💬", "Encouraging"], ["🧂", "Salt required"], ["🚫", "Placebo-prone"], ["⚖️", "Stories aren&#39;t data"]]'>
+<mini-poll slug="cardiogen-mini-ch8"
+  data-question="Anecdotes about a heart peptide — your take?"
+  data-answers='[["⚠️", "Anecdotes aren&#39;t evidence"], ["🧂", "Interesting, salt required"], ["🚫", "Too risky to trust"], ["🔬", "Needs real trials"]]'>
 </mini-poll>
-<!-- ============ CHAPTER 7 ============ -->
-<section class="chapter" id="ch7">
-  <span class="eyebrow"><span class="n">07</span>Risks & unknowns</span>
+<!-- ============ CHAPTER 9 ============ -->
+<section class="chapter" id="ch9">
+  <span class="eyebrow"><span class="n">09</span>Risks & unknowns</span>
   <h2>Risks &amp; <span class="hl">unknowns</span></h2>
   <p class="lede"><strong>No trials, no approval, no oversight</strong> — and the gravest risk is behavioral: false confidence. Kept in separate boxes on purpose.</p>
 
@@ -711,35 +955,39 @@ mini-poll { display: block; }
     <div class="scard lvl-unknown reveal"><h4>Interactions</h4><p><strong>Unknown:</strong> no interaction data with heart medications — the very drugs the target audience takes. The overlap zone is blank.</p></div>
   </div>
   <div class="plain reveal"><div class="plabel">Plain English</div><p>Known: <strong>no trials, no approval, no oversight</strong> of what is sold. Theoretical: false confidence is the real poison — <strong>skipping proven heart care for a four-letter word</strong>. Unknown: everything about what it does in a human body. For the heart, "unknown" is not adventurous. It is <strong>dangerous</strong>.</p></div></section>
-<mini-poll slug="cardiogen-mini-ch7"
+<mini-poll slug="cardiogen-mini-ch9"
   data-question="Which unknown bothers you most?"
   data-answers='[["🏥", "False confidence risk"], ["🧪", "No human data"], ["🏭", "What&#39;s in the vial"], ["❓", "All of it"]]'>
 </mini-poll>
-<!-- ============ CHAPTER 8 ============ -->
-<section class="chapter" id="ch8">
-  <span class="eyebrow"><span class="n">08</span>Glossary</span>
-  <h2>Speak <span class="hl">bioregulator</span></h2>
-  <p class="lede">Twelve terms, each with the science, an example, and a plain-English translation. Tap any term to expand it.</p>
+<!-- ============ CHAPTER 10 ============ -->
+<section class="chapter" id="ch10">
+  <span class="eyebrow"><span class="n">10</span>Understanding Cardiogen Terminology</span>
+  <h2>Understanding <span class="hl">Cardiogen</span> Terminology</h2>
+  <p class="lede">Twelve terms, each with the science and a plain-English translation. Tap any term to expand it.</p>
 
   <div class="gloss">
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fda4af22"/><path d="M14 24h20M24 14v20" fill="none" stroke="#fda4af" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Cardiogen</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>A tetrapeptide (Ala-Glu-Asp-Pro) from the peptide-bioregulation tradition, claimed to support heart function. No rigorous trials, no approval.</p><p class="gex"><span class="gslabel">Example</span>The product this whole page is about — the four-letter command.</p><div class="plain"><span class="plabel">Plain English</span>Four amino acids with a very big claim.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#be123c22"/><path d="M18 8h12v6l-6 4-6-4zM24 18v14M16 40h16" fill="none" stroke="#be123c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Bioregulator</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>In the St. Petersburg school’s usage: a short peptide said to regulate a specific organ’s function, often at the gene level.</p><p class="gex"><span class="gslabel">Example</span>The category Cardiogen claims to belong to.</p><div class="plain"><span class="plabel">Plain English</span>A peptide supposedly assigned to one organ.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#ad3a5a22"/><path d="M24 6c6 8 10 14 10 20a10 10 0 0 1-20 0c0-6 4-12 10-20z" fill="none" stroke="#ad3a5a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Tetrapeptide</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>A peptide of exactly four amino acids — about as simple as peptides get.</p><p class="gex"><span class="gslabel">Example</span>What Cardiogen is, chemically: very small, very simple.</p><div class="plain"><span class="plabel">Plain English</span>Four beads on a string.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fda4af22"/><path d="M24 40C14 32 8 26 8 18a8 8 0 0 1 16-2 8 8 0 0 1 16 2c0 8-6 14-16 22z" fill="none" stroke="#fda4af" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Khavinson</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>The St. Petersburg researcher whose school pioneered peptide bioregulation from the 1970s onward.</p><p class="gex"><span class="gslabel">Example</span>The founder of the tradition behind Cardiogen.</p><div class="plain"><span class="plabel">Plain English</span>The name behind the bioregulator school.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#be123c22"/><path d="M24 6l14 6v10c0 10-6 16-14 20C16 38 10 32 10 22V12z" fill="none" stroke="#be123c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Epigenetic (claimed)</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Changes in gene activity without changing DNA — the mechanism proponents claim for bioregulators. Unproven for Cardiogen.</p><p class="gex"><span class="gslabel">Example</span>The "software update" the four-letter word supposedly installs.</p><div class="plain"><span class="plabel">Plain English</span>Tuning genes without rewriting them — claimed, not shown.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#ad3a5a22"/><path d="M10 24a14 14 0 0 1 24-9M38 24a14 14 0 0 1-24 9M30 10l4 5-5 4M18 38l-4-5 5-4" fill="none" stroke="#ad3a5a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Cardiomyocyte</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>A heart muscle cell — the cell type Cardiogen supposedly targets and tunes.</p><p class="gex"><span class="gslabel">Example</span>The intended audience of the command.</p><div class="plain"><span class="plabel">Plain English</span>A heart muscle cell.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fda4af22"/><path d="M20 20a8 8 0 1 0 0 16 8 8 0 0 0 0-16zM26 26l12 12" fill="none" stroke="#fda4af" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">RCT</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Randomized controlled trial — the gold standard for testing whether a treatment works. Cardiogen has none.</p><p class="gex"><span class="gslabel">Example</span>The missing exam the product never sat.</p><div class="plain"><span class="plabel">Plain English</span>The fair test every real drug must pass.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#be123c22"/><path d="M6 18c4-6 8-6 12 0s8 6 12 0 8-6 12 0M6 30c4-6 8-6 12 0s8 6 12 0 8-6 12 0" fill="none" stroke="#be123c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Placebo</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Improvement from expectation — powerful for energy and wellbeing, exactly where bioregulator anecdotes live.</p><p class="gex"><span class="gslabel">Example</span>The eternal rival explanation for every testimonial.</p><div class="plain"><span class="plabel">Plain English</span>Feeling better because you expect to.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#ad3a5a22"/><path d="M24 14a10 10 0 1 0 0 20 10 10 0 0 0 0-20zM24 4v6M24 38v6M4 24h6M38 24h6" fill="none" stroke="#ad3a5a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Organ-specific peptides</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>The bioregulator school’s catalog: different short peptides assigned to different organs — heart, brain, thymus, eyes.</p><p class="gex"><span class="gslabel">Example</span>The product line Cardiogen comes from.</p><div class="plain"><span class="plabel">Plain English</span>A peptide for every organ, says the catalog.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fda4af22"/><path d="M10 10h12v12H10zM26 10h12v12H26zM10 26h12v12H10zM26 26h12v12H26z" fill="none" stroke="#fda4af" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">In-vitro</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>"In glass" — dish experiments. Even the friendliest Cardiogen evidence barely reaches this tier.</p><p class="gex"><span class="gslabel">Example</span>How thin the file is: thin even by lab standards.</p><div class="plain"><span class="plabel">Plain English</span>Science done in a dish, not a person.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#be123c22"/><path d="M10 14h28v20H10zM10 14l14 10 14-10" fill="none" stroke="#be123c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Supplement vs drug</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Supplements face light regulation and need no proof of efficacy; drugs must prove safety and efficacy in trials. Cardiogen lives in the first world.</p><p class="gex"><span class="gslabel">Example</span>Why "not approved" matters less for vitamins and more for heart claims.</p><div class="plain"><span class="plabel">Plain English</span>Light rules vs. strict rules — Cardiogen chose light.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#ad3a5a22"/><path d="M10 8h16a6 6 0 0 1 6 6v22H16a6 6 0 0 1-6-6zM16 8v28" fill="none" stroke="#ad3a5a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Anecdote</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>A personal story — vivid, unverified, uncontrolled. The entire human evidence base for Cardiogen.</p><p class="gex"><span class="gslabel">Example</span>All anyone has: stories.</p><div class="plain"><span class="plabel">Plain English</span>A story, not a study.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fda4af22"/><path d="M14 24h20M24 14v20" fill="none" stroke="#a4f1fd" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Cardiogen</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Cardiogen is a synthetic tetrapeptide whose <strong>reported</strong> amino-acid sequence is Ala-Glu-Asp-Pro. It comes from the Khavinson peptide-bioregulation tradition and is presented by its proponents as a heart-targeted bioregulator. No receptor, target, or mechanism has been demonstrated for it; the claimed effects rest on hypothesized gene-level regulation. There are no published randomized controlled trials in humans, and it holds no regulatory drug approval anywhere. Products sold under the name are unregulated, so a given vial's actual identity and purity may not match the label.</p><div class="plain"><span class="plabel">Plain English</span>Cardiogen is a very short chain of four amino acids (alanine, glutamic acid, aspartic acid, proline), sold as a heart-supporting product in the &ldquo;bioregulator&rdquo; tradition. Its supporters say it tells heart cells how to behave &mdash; but no one has shown <em>how</em> that would actually happen in the body. It has never been tested in a proper human trial and is not an approved medicine. And because products sold under the name are unregulated, you cannot assume what is in the bottle matches the label.</div></div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#be123c22"/><path d="M18 8h12v6l-6 4-6-4zM24 18v14M16 40h16" fill="none" stroke="#a712be" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Bioregulator</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>In the St. Petersburg school's terminology, a bioregulator is a short peptide claimed to regulate the function of a specific organ or tissue. Proponents say these peptides act at the level of gene expression, restoring normal cellular function rather than blocking or stimulating a single pathway. The concept originated in Russian biogerontology research beginning in the 1970s. The proposed gene-level mechanism has not been demonstrated by accepted molecular methods, and claims for individual bioregulators rest on thin, mostly uncontrolled literature.</p><div class="plain"><span class="plabel">Plain English</span>&ldquo;Bioregulator&rdquo; is the name this tradition gives to short peptides that supposedly tune up one specific organ. Supporters say the peptides switch the right genes back on, rather than drugging a single symptom. The idea dates back to Russian longevity research in the 1970s. But no one has shown that this gene-level tuning actually happens &mdash; most of the supporting evidence is thin and uncontrolled.</div></div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#ad3a5a22"/><path d="M24 6c6 8 10 14 10 20a10 10 0 0 1-20 0c0-6 4-12 10-20z" fill="none" stroke="#3aad64" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Tetrapeptide</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>A tetrapeptide is a peptide molecule composed of exactly four amino-acid residues linked by peptide bonds. With a molecular weight typically under 500 daltons, tetrapeptides are among the smallest and simplest peptide structures. Short chains like this are rapidly broken down by digestive and blood enzymes, which is one reason their oral bioavailability is generally low. The <strong>reported</strong> Cardiogen sequence is Ala-Glu-Asp-Pro.</p><div class="plain"><span class="plabel">Plain English</span>A tetrapeptide is just four amino-acid building blocks joined in a row &mdash; about as small as proteins get. Because it is so short, the body's enzymes would normally chop it up quickly, which is why little of it tends to reach where it is aimed. Cardiogen's reported sequence is four specific blocks: alanine, glutamic acid, aspartic acid, and proline. So chemically, we are talking about a tiny, simple molecule carrying a very large set of claims.</div></div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fda4af22"/><path d="M24 40C14 32 8 26 8 18a8 8 0 0 1 16-2 8 8 0 0 1 16 2c0 8-6 14-16 22z" fill="none" stroke="#a4f1fd" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Khavinson</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Khavinson is the St. Petersburg researcher whose institute pioneered the peptide-bioregulation school of research beginning in the 1970s. His group proposed that short peptides could regulate organ function and slow aspects of aging, and built a catalog of peptides assigned to different organs. Much of this work was published in journals that were difficult for Western scientists to access or evaluate. The school's central claims have not been replicated by independent international trials.</p><div class="plain"><span class="plabel">Plain English</span>Khavinson is the Russian scientist whose research group started the whole bioregulator idea in the 1970s. His team proposed that short peptides could tune individual organs and published a catalog of them. Much of that work appeared in journals that Western researchers rarely read, so it was never independently checked. The big claims have never been reproduced by outside scientists running their own trials.</div></div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#be123c22"/><path d="M24 6l14 6v10c0 10-6 16-14 20C16 38 10 32 10 22V12z" fill="none" stroke="#a712be" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Epigenetic (claimed)</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Epigenetics is the study of heritable changes in gene activity that occur without changes to the underlying DNA sequence &mdash; through chemical marks such as methylation that turn genes up or down. It is a genuine, well-established field of biology. Proponents of peptide bioregulators claim their peptides work through epigenetic mechanisms, switching genes on or off. That proposed mechanism has not been demonstrated for Cardiogen by accepted experimental methods, so &ldquo;epigenetic&rdquo; here describes a hypothesis, not a finding.</p><div class="plain"><span class="plabel">Plain English</span>Epigenetics is real science: it studies how genes get turned up or down without changing the DNA itself &mdash; like dimmer switches on the genetic wiring. Bioregulator supporters borrow this word and say their peptides flip those switches. The problem is that nobody has shown Cardiogen doing any of this in an experiment. So here, &ldquo;epigenetic&rdquo; is a guess dressed up as an explanation, not something that was actually measured.</div></div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#ad3a5a22"/><path d="M10 24a14 14 0 0 1 24-9M38 24a14 14 0 0 1-24 9M30 10l4 5-5 4M18 38l-4-5 5-4" fill="none" stroke="#3aad64" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Cardiomyocyte</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>A cardiomyocyte is the specialized muscle cell that makes up the contractile tissue of the heart. These cells contract in a coordinated rhythm to pump blood, and in mammals they have very limited ability to divide and replace themselves once damaged. Bioregulator proponents present cardiomyocytes as the intended cellular target of Cardiogen. Because adult heart muscle regenerates so poorly, any claimed effect on these cells would need strong evidence to be credible.</p><div class="plain"><span class="plabel">Plain English</span>A cardiomyocyte is a heart muscle cell &mdash; the cell that squeezes to pump your blood. These cells barely replace themselves once you are an adult, which is why heart damage is usually permanent. Cardiogen's supporters say their peptide is aimed at exactly these cells. If that were true, it would be remarkable &mdash; which is precisely why the claim needs real evidence, and does not have it.</div></div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fda4af22"/><path d="M20 20a8 8 0 1 0 0 16 8 8 0 0 0 0-16zM26 26l12 12" fill="none" stroke="#a4f1fd" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">RCT</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>A randomized controlled trial is an experiment in which participants are randomly assigned to receive the treatment or a control, so that differences in outcome can be attributed to the treatment rather than to chance or selection bias. Randomization and control are what separate tested medicines from untested ones, and regulators require RCTs before approving a drug. No randomized controlled trial of Cardiogen in humans has been published. Without one, claims about what it does to people remain untested hypotheses.</p><div class="plain"><span class="plabel">Plain English</span>A randomized controlled trial is the fairest possible test: people are randomly split into a treatment group and a comparison group, so any difference must come from the treatment itself. It is the test that every approved medicine had to pass. Cardiogen has never been put through one in humans. That means everything claimed about its effects on people is still a guess, not a result.</div></div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#be123c22"/><path d="M6 18c4-6 8-6 12 0s8 6 12 0 8-6 12 0M6 30c4-6 8-6 12 0s8 6 12 0 8-6 12 0" fill="none" stroke="#a712be" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Placebo</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>The placebo effect is a real, measurable improvement in symptoms that comes from expectation, ritual, and attention rather than from the pharmacology of a treatment. It is strongest for subjective outcomes such as energy, mood, and perceived wellbeing &mdash; exactly the kinds of outcomes that dominate bioregulator testimonials. Without a controlled trial, there is no way to tell a placebo response apart from a genuine drug effect. This is why anecdotes, however vivid, cannot establish that a product works.</p><div class="plain"><span class="plabel">Plain English</span>The placebo effect is genuine improvement that comes from believing you are being helped &mdash; the ritual, the hope, the attention &mdash; not from the substance itself. It hits hardest on things like energy and how you feel, which is exactly what most Cardiogen stories are about. Without a controlled trial, a story of &ldquo;I felt better&rdquo; cannot be separated from a placebo response. That is why personal stories, no matter how sincere, cannot prove a product works.</div></div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#ad3a5a22"/><path d="M24 14a10 10 0 1 0 0 20 10 10 0 0 0 0-20zM24 4v6M24 38v6M4 24h6M38 24h6" fill="none" stroke="#3aad64" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Organ-specific peptides</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Within the bioregulator tradition, different short peptides are presented as specific to different organs &mdash; one for the heart, others for the brain, thymus, or eyes &mdash; forming a catalog of organ-matched products. The underlying idea is that each peptide somehow &ldquo;knows&rdquo; which organ it is for. No demonstrated mechanism explains how a simple tetrapeptide would home to and selectively regulate one organ. The organ assignments come from the school's own literature rather than from independent targeting studies.</p><div class="plain"><span class="plabel">Plain English</span>The bioregulator catalog reads like a menu: one peptide for the heart, one for the brain, one for the thymus, one for the eyes. The pitch is that each peptide somehow knows which organ is its own. But no one has shown how a tiny four-block molecule would find its way to the heart and only the heart. The organ labels come from the tradition's own writings, not from independent experiments proving the targeting is real.</div></div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fda4af22"/><path d="M10 10h12v12H10zM26 10h12v12H26zM10 26h12v12H10zM26 26h12v12H26z" fill="none" stroke="#a4f1fd" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">In-vitro</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>&ldquo;In vitro&rdquo; literally means &ldquo;in glass&rdquo; and refers to experiments performed in laboratory dishes or test tubes, outside a living organism. Such studies can show that something happens to cells in a controlled environment, but they cannot show that the same thing happens in a human body. For Cardiogen, even the most favorable published evidence barely reaches this modest tier. Dish-level findings do not establish effects, safety, or dosing in people.</p><div class="plain"><span class="plabel">Plain English</span>&ldquo;In vitro&rdquo; is science done in a dish instead of in a living creature &mdash; useful, but a long way from proof. A result in a dish only shows what can happen to cells in perfect lab conditions, not what happens in your body. Even the friendliest published evidence for Cardiogen barely gets to this level. If the dish is the best evidence on offer, there is no evidence for what it does to a person.</div></div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#be123c22"/><path d="M10 14h28v20H10zM10 14l14 10 14-10" fill="none" stroke="#a712be" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Supplement vs drug</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>A drug must demonstrate safety and efficacy in clinical trials before a regulator will approve it for sale as a medicine. A supplement, in most jurisdictions, can be sold without pre-market proof that it works, under much lighter oversight. Cardiogen is marketed in this lightly regulated space, which means none of the testing a heart medicine would normally face has been required. &ldquo;Not approved&rdquo; is therefore not a technicality here &mdash; it means the safety and efficacy questions have simply not been answered.</p><div class="plain"><span class="plabel">Plain English</span>Medicines have to prove they are safe and that they work before anyone is allowed to sell them as drugs. Supplements do not &mdash; in most countries they can be sold with almost no proof of anything. Cardiogen lives in that second, lightly watched world, so it never had to pass the tests a real heart medicine must pass. That is why &ldquo;not approved&rdquo; is not fine print here; it means the basic questions were never answered.</div></div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#ad3a5a22"/><path d="M10 8h16a6 6 0 0 1 6 6v22H16a6 6 0 0 1-6-6zM16 8v28" fill="none" stroke="#3aad64" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Anecdote</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>An anecdote is a personal, first-hand account of an experience &mdash; vivid and often sincere, but uncontrolled, unverified, and subject to recall bias and selection effects. People who feel better are far more likely to tell their story than people who feel nothing, so anecdotes systematically overstate benefits. The entire human evidence base for Cardiogen consists of anecdotes; there are no published human trials. A collection of stories, no matter how large, is not a controlled study.</p><div class="plain"><span class="plabel">Plain English</span>An anecdote is one person's story &mdash; real to them, but unchecked and uncontrolled. People who think something helped them tell the world; people who felt nothing quietly move on, so stories always paint a rosier picture. For Cardiogen in humans, stories are all there is &mdash; no published trials exist. A thousand stories are still not a study, and cannot tell you whether the product did anything at all.</div></div></div></div>
   </div></section>
-<!-- ============ CHAPTER 9 ============ -->
-<section class="chapter" id="ch9">
-  <span class="eyebrow"><span class="n">09</span>Takeaways</span>
+<mini-poll slug="cardiogen-mini-ch10"
+  data-question="Which evidence concept matters most here?"
+  data-answers='[["📊", "RCT — the fair test"], ["💬", "Anecdote — story, not study"], ["🧪", "Placebo — expectation effect"], ["🏛️", "Bioregulator — the tradition"]]'>
+</mini-poll>
+<!-- ============ CHAPTER 11 ============ -->
+<section class="chapter" id="ch11">
+  <span class="eyebrow"><span class="n">11</span>Takeaways</span>
   <h2>The <span class="hl">bottom line</span></h2>
-  <p class="lede">Nine chapters, distilled. Tradition is not treatment — and the heart is not the organ for experiments.</p>
+  <p class="lede">Eleven chapters, distilled. Tradition is not treatment — and the heart is not the organ for experiments.</p>
 
   <div class="take-grid">
     <div class="take reveal"><div class="tk">🧬</div><h4>Four amino acids</h4><p>Cardiogen is <strong>Ala-Glu-Asp-Pro</strong> — a tetrapeptide. Simple chemistry; the complexity is all in the claims.</p></div>
@@ -761,7 +1009,8 @@ mini-poll { display: block; }
       <li><strong>No medical advice.</strong> Nothing here is a recommendation for or against any treatment. Talk to a licensed clinician — especially a cardiologist — about any heart-health decision.</li>
     </ul>
   </div></section>
-<mini-poll slug="cardiogen-mini-ch8"
+<h3 class="rate-h reveal">⭐ How would you rate this infographic?</h3>
+<mini-poll slug="cardiogen-mini-ch11"
   data-question="How would you rate this infographic?"
   data-answers='[["😍", "⭐⭐⭐⭐⭐ · Loved it"], ["🙂", "⭐⭐⭐⭐ · Good stuff"], ["😐", "⭐⭐⭐ · It&#39;s okay"]]'>
 </mini-poll>
@@ -806,7 +1055,7 @@ setTheme(document.documentElement.getAttribute("data-theme")==="light"?"light":"
   function size(){W=window.innerWidth;H=window.innerHeight;svg.setAttribute("viewBox","0 0 "+W+" "+H);}
   size();window.addEventListener("resize",size);
   var NS="http://www.w3.org/2000/svg";
-  var colors=["#fda4af","#be123c","#ad3a5a","#be123c","#fda4af","#4c0519"];
+  var colors=["#a4f1fd","#a712be","#3aad64","#a712be","#a4f1fd","#43054c"];
   for(var i=0;i<140;i++){
     var c=document.createElementNS(NS,"circle");
     var col=colors[i%colors.length];
@@ -913,7 +1162,7 @@ var bar=document.getElementById("progress"),
     tocBar=document.getElementById("tocBar"),tocPct=document.getElementById("tocPct"),
     links=Array.prototype.slice.call(document.querySelectorAll(".toc a, nav.chapters a")),
     rail=document.getElementById("rail"),
-    sections=["ch1","ch2","ch3","ch4","ch5","ch6","ch7","ch8","ch9"].map(function(id){return document.getElementById(id);}),
+    sections=["ch1","ch2","ch3","ch4","ch5","ch6","ch7","ch8","ch9","ch10","ch11"].map(function(id){return document.getElementById(id);}),
     pill=document.querySelector(".toc-pill"),cur=-1,ticking=false;
 function easeWidth(el,v){el.style.width=v+"%";}
 function update(){
@@ -956,7 +1205,7 @@ function fireConfetti(){
   var c=document.getElementById("confetti"),ctx=c.getContext("2d");
   c.width=window.innerWidth;c.height=window.innerHeight;
   c.classList.add("show");
-  var cols=["#fda4af","#be123c","#ad3a5a","#fbbf24","#edf0f9"],parts=[];
+  var cols=["#a4f1fd","#a712be","#3aad64","#26ddf9","#edf0f9"],parts=[];
   for(var i=0;i<45;i++)parts.push({x:Math.random()*c.width,y:-20-Math.random()*c.height*0.25,
     w:4+Math.random()*4,h:5+Math.random()*5,c:cols[i%cols.length],
     vy:0.7+Math.random()*1.1,ph:Math.random()*Math.PI*2,sw:0.4+Math.random()*0.8,
@@ -992,12 +1241,12 @@ fio.observe(document.querySelector("footer"));
 /* Mini-poll backend config. Empty = preview mode (local votes, 3-day cooldown).
    To go live: fill in your Supabase project URL + anon key (see poll-admin README). */
 window.MINI_POLL_CONFIG = { supabaseUrl: "", anonKey: "", turnstileSiteKey: "",
-  accents: ["#fda4af", "#be123c", "#be123c", "#be123c", "#ad3a5a", "#fda4af", "#fbbf24", "#be123c", "#ad3a5a"] };
+  accents: ["#a4f1fd", "#a712be", "#a712be", "#a712be", "#3aad64", "#a4f1fd", "#26ddf9", "#a712be", "#3aad64"] };
 </script>
 <script>
 /* Mini-poll web component — vanilla JS, no dependencies.
    Usage:
-     <mini-poll slug="cardiogen-mini-ch1"
+     <mini-poll slug="cardiogen-mini-recap"
        data-question="Had you heard of Cardiogen before today?"
        data-answers='[["🆕","No — brand new to me"],["👀","Heard the name"]]'>
      </mini-poll>
@@ -1076,8 +1325,8 @@ window.MINI_POLL_CONFIG = { supabaseUrl: "", anonKey: "", turnstileSiteKey: "",
      Palette comes from window.MINI_POLL_CONFIG.accents when the page sets one,
      otherwise the default nine-color set. */
   var ACCENTS = (window.MINI_POLL_CONFIG && window.MINI_POLL_CONFIG.accents) ||
-                ['#fda4af', '#be123c', '#ad3a5a', '#a78bfa', '#ad3a5a',
-                 '#be123c', '#fbbf24', '#fb7185', '#22d3ee'];
+                ['#a4f1fd', '#a712be', '#3aad64', '#a78bfa', '#3aad64',
+                 '#a712be', '#26ddf9', '#e971fb', '#22d3ee'];
   function pollAccents(slug) {
     var m = /ch(\d+)/.exec(slug || '');
     var i = m ? parseInt(m[1], 10) - 1 : 0;
